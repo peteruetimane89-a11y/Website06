@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events &amp; Highlights | LYZON Engineering &amp; Services, Lda</title>
+    <script>
+        window.tailwind = window.tailwind || {};
+        window.tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            200: '#bbf7d0',
+                            300: '#86efac',
+                            400: '#4ade80',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            800: '#166534',
+                            900: '#14532d',
+                            950: '#052e16'
+                        },
+                        electric: {
+                            50: '#ecfdf5',
+                            100: '#d1fae5',
+                            200: '#a7f3d0',
+                            300: '#6ee7b7',
+                            400: '#34d399',
+                            500: '#10b981'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        soft: '0 12px 24px -16px rgba(2, 6, 23, 0.25)',
+                        lift: '0 18px 40px -20px rgba(2, 6, 23, 0.35)'
+                    }
+                },
+            },
+        }
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="Css/style.css?v=20260930_4">
+</head>
+<body class="text-slate-900 antialiased font-sans is-loading">
+    <div id="pageLoader" aria-label="Loading">
+        <div class="loader-panel">
+            <div class="loader-brand">
+                <img src="pictures/lyzon-logo-transparent.png" alt="Lyzon Engineering Logo" class="logo-img loader-logo">
+            </div>
+            <div class="loader-meter">
+                <div class="loader-progress">
+                    <div class="loader-progress-bar"></div>
+                </div>
+                <div class="loader-meta">
+                    <span class="loader-status">Loading</span>
+                    <span class="loader-dots"><span></span><span></span><span></span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="appShell">
+        <nav id="siteNav" class="sticky top-0 z-50 bg-white border-b border-slate-100 transition-all">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="h-20 flex items-center justify-between">
+                    <a href="index.html#home" class="flex items-center" aria-label="LYZON home">
+                        <span class="logo-shell">
+                            <img src="pictures/lyzon-logo-transparent.png" alt="Lyzon Engineering Logo" class="logo-img h-11 md:h-12 w-auto object-contain">
+                        </span>
+                    </a>
+
+                    <div class="hidden lg:flex items-center gap-9 text-sm font-semibold">
+                        <a href="index.html#home" class="relative underline-sweep text-slate-600 hover:text-navy-950 transition-colors">Home</a>
+                        <a href="services.html" class="relative underline-sweep text-slate-600 hover:text-navy-950 transition-colors">Services</a>
+                        <a href="industries.html" class="relative underline-sweep text-slate-600 hover:text-navy-950 transition-colors">Industries</a>
+                        <a href="projects.html" class="relative underline-sweep text-slate-600 hover:text-navy-950 transition-colors">Projects</a>
+                        <a href="policy.html" class="relative underline-sweep text-slate-600 hover:text-navy-950 transition-colors">Policy</a>
+                        <a href="events.html" class="relative underline-sweep text-navy-950">Events</a>
+                    </div>
+
+                    <div class="hidden lg:flex items-center gap-3">
+                        <a href="index.html#contact" class="px-5 py-3 rounded font-extrabold text-navy-950 bg-electric-400 hover:bg-electric-300 transition-colors shadow-soft">Request Quote</a>
+                    </div>
+
+                    <button id="mobileMenuButton" class="lg:hidden inline-flex items-center justify-center w-11 h-11 rounded border border-slate-200 hover:bg-slate-50 transition-colors" aria-label="Open menu">
+                        <i data-lucide="menu" class="w-6 h-6 text-navy-950"></i>
+                    </button>
+                </div>
+
+                <div id="mobileMenu" class="hidden lg:hidden pb-5">
+                    <div class="grid gap-2 pt-2">
+                        <a href="index.html#home" class="px-3 py-2 rounded text-sm font-semibold text-slate-700 hover:bg-slate-50">Home</a>
+                        <a href="services.html" class="px-3 py-2 rounded text-sm font-semibold text-slate-700 hover:bg-slate-50">Services</a>
+                        <a href="industries.html" class="px-3 py-2 rounded text-sm font-semibold text-slate-700 hover:bg-slate-50">Industries</a>
+                        <a href="projects.html" class="px-3 py-2 rounded text-sm font-semibold text-slate-700 hover:bg-slate-50">Projects</a>
+                        <a href="policy.html" class="px-3 py-2 rounded text-sm font-semibold text-slate-700 hover:bg-slate-50">Policy</a>
+                        <a href="events.html" class="px-3 py-2 rounded text-sm font-semibold text-navy-950 hover:bg-slate-50">Events</a>
+                        <a href="index.html#contact" class="mt-2 px-4 py-3 rounded font-extrabold text-navy-950 bg-electric-400 hover:bg-electric-300 transition-colors text-center">Request Quote</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <!-- ========================================================================== -->
+            <!-- MODULAR EVENT BLOCK: FACIM 2026 (copy this entire block to add new events) -->
+            <!-- Repeat the article block below for future events (Labour Day, Women's Day, etc.) -->
+            <!-- ========================================================================== -->
+            <article id="event-facim-2026" class="bg-slate-50 text-navy-950">
+
+                <!-- === 1 & 2. LARGE FEATURED HERO VISUAL + FACIM 2026 TITLE + SHORT INTRO === -->
+                <section class="bg-navy-950 text-white">
+                    <div class="hero-grid hero-grid--events">
+                        <div class="w-full pl-2 pr-4 sm:pl-4 sm:pr-6 lg:pl-6 lg:pr-8 py-12 lg:py-16 hero-layout">
+                            <div class="hero-content-panel reveal-up">
+                                <div class="flex flex-wrap items-center gap-3">
+                                    <p class="hero-kicker inline-flex items-center gap-2 text-electric-300 font-extrabold uppercase tracking-[0.2em] text-xs">
+                                        <i data-lucide="sparkles" class="w-4 h-4"></i>
+                                        Featured Event
+                                    </p>
+                                    <span class="inline-flex items-center gap-2 rounded-full bg-white/10 border border-white/15 px-3 py-1.5 text-[11px] font-extrabold uppercase tracking-[0.18em] text-electric-200">
+                                        <i data-lucide="building-2" class="w-3.5 h-3.5"></i>
+                                        Exhibition · Partnership
+                                    </span>
+                                </div>
+                                <h2 class="mt-4 text-4xl md:text-6xl font-extrabold tracking-tight leading-[0.97] hero-heading">
+                                    <span class="block hero-heading-brand">FACIM 2026</span>
+                                    <span class="block hero-heading-main text-electric-200 mt-2 text-[0.58em] font-bold tracking-tight leading-tight">LYZON Engineering &amp; Himoinsa</span>
+                                    <span class="block hero-heading-sub mt-3 text-[0.3em] text-slate-200/90">Powering Mozambique's Future</span>
+                                </h2>
+                                <div class="hero-divider mt-6" aria-hidden="true"></div>
+                                <p class="hero-summary mt-5 text-lg md:text-xl text-slate-200 max-w-2xl leading-relaxed">
+                                    FACIM 2026 was an opportunity for LYZON Engineering &amp; Services to strengthen relationships, showcase its capabilities, and engage with clients, industry leaders, business partners, and other stakeholders in Mozambique.
+                                </p>
+                                <div class="mt-8 grid sm:grid-cols-3 gap-4 max-w-2xl">
+                                    <div class="reveal-right rounded-xl border border-white/15 bg-white/6 backdrop-blur-sm px-4 py-3.5">
+                                        <p class="text-[10px] font-extrabold uppercase tracking-[0.2em] text-electric-300">Edition</p>
+                                        <p class="mt-1 font-extrabold text-white text-base">FACIM 2026</p>
+                                    </div>
+                                    <div class="reveal-right rounded-xl border border-white/15 bg-white/6 backdrop-blur-sm px-4 py-3.5" style="transition-delay: 60ms">
+                                        <p class="text-[10px] font-extrabold uppercase tracking-[0.2em] text-electric-300">Location</p>
+                                        <p class="mt-1 font-extrabold text-white text-base">Maputo, Mozambique</p>
+                                    </div>
+                                    <div class="reveal-right rounded-xl border border-white/15 bg-white/6 backdrop-blur-sm px-4 py-3.5" style="transition-delay: 120ms">
+                                        <p class="text-[10px] font-extrabold uppercase tracking-[0.2em] text-electric-300">Partner</p>
+                                        <p class="mt-1 font-extrabold text-white text-base">Himoinsa, Mozambique</p>
+                                    </div>
+                                </div>
+                                <div class="hero-actions mt-7 flex flex-wrap gap-4">
+                                    <a href="#facim-showcase" class="hero-action-primary inline-flex items-center justify-center min-w-[200px] px-7 py-4 rounded-full font-extrabold text-navy-950 bg-electric-400 hover:bg-electric-300 transition-colors shadow-lift">
+                                        What LYZON Showcased
+                                        <i data-lucide="chevrons-down" class="ml-2 w-4 h-4"></i>
+                                    </a>
+                                    <a href="index.html#contact" class="hero-action-secondary inline-flex items-center justify-center min-w-[200px] px-7 py-4 rounded-full font-extrabold border border-white/25 hover:border-electric-300 hover:text-electric-200 transition-colors">
+                                        <i data-lucide="mail" class="mr-2 w-4 h-4"></i>
+                                        Discuss a Project
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Event content wrapper (white / slate-50 bands) -->
+                <div class="py-20 lg:py-24">
+                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+                        <!-- === 3. SHORT EVENT INTRODUCTION (extended) === -->
+                        <section class="reveal-up">
+                            <div class="rounded-2xl shadow-soft card-outline bg-white p-7 md:p-10">
+                                <div class="grid lg:grid-cols-3 gap-8 lg:gap-10 items-start">
+                                    <div class="lg:col-span-1">
+                                        <p class="text-xs font-extrabold uppercase tracking-[0.22em] text-electric-500">About the Event</p>
+                                        <h3 class="mt-2 text-2xl md:text-3xl font-extrabold tracking-tight text-navy-950">Mozambique's flagship industrial gathering</h3>
+                                        <div class="mt-5 w-12 h-12 rounded-xl bg-navy-50 flex items-center justify-center">
+                                            <i data-lucide="milestone" class="w-6 h-6 text-navy-900"></i>
+                                        </div>
+                                    </div>
+                                    <div class="lg:col-span-2 text-slate-700 text-base md:text-lg leading-[1.8] space-y-5">
+                                        <p>
+                                            As the country's largest and most comprehensive international trade and industry exhibition, FACIM brings together producers, suppliers, service providers, and decision-makers from every major sector of the Mozambican economy and from every province.
+                                        </p>
+                                        <p>
+                                            For LYZON Engineering &amp; Services, the 2026 edition was a structured moment to meet long-standing clients, open new technical conversations with project owners and operators, and present the full range of the company's electrical, automation, and maintenance capabilities to a wide national and international audience.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- === 4. LYZON + HIMOINSA PARTNERSHIP SECTION === -->
+                        <section id="facim-partnership" class="mt-14 reveal-up">
+                            <div class="grid lg:grid-cols-2 gap-6 lg:gap-8">
+                                <div class="rounded-2xl p-7 shadow-soft card-outline bg-white">
+                                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-electric-50 text-electric-700 border border-electric-200/60 text-xs font-extrabold uppercase tracking-[0.18em]">
+                                        <i data-lucide="handshake" class="w-4 h-4"></i>
+                                        Official Partnership
+                                    </div>
+                                    <h3 class="mt-6 text-2xl md:text-3xl font-extrabold tracking-tight text-navy-950">LYZON × Himoinsa</h3>
+                                    <p class="mt-4 text-slate-700 leading-[1.8]">
+                                        LYZON participated alongside <strong>Himoinsa, its official partner in Mozambique</strong>, showcasing power generation solutions alongside LYZON's in-country engineering, project delivery, and aftermarket service capabilities.
+                                    </p>
+                                    <p class="mt-4 text-slate-700 leading-[1.8]">
+                                        The partnership combines Himoinsa's international technology and manufacturing expertise with LYZON's local engineering knowledge, service capabilities, and deep understanding of the Mozambican market. Together this ensures clients receive reliable, engineered, properly supported power generation and electrical solutions from a single accountable team.
+                                    </p>
+                                    <div class="mt-7 grid grid-cols-2 gap-4">
+                                        <div class="rounded-xl bg-slate-50 border border-slate-200 p-4">
+                                            <p class="text-[10px] font-extrabold uppercase tracking-[0.2em] text-electric-500">International</p>
+                                            <p class="mt-1 font-extrabold text-navy-950">Himoinsa technology &amp; manufacturing</p>
+                                        </div>
+                                        <div class="rounded-xl bg-slate-50 border border-slate-200 p-4">
+                                            <p class="text-[10px] font-extrabold uppercase tracking-[0.2em] text-electric-500">Local</p>
+                                            <p class="mt-1 font-extrabold text-navy-950">LYZON engineering &amp; service delivery</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="rounded-2xl shadow-soft card-outline overflow-hidden bg-white">
+                                    <div class="relative h-full min-h-[320px] overflow-hidden" style="background-color: #052e16; background-image: linear-gradient(180deg, rgba(2, 6, 23, 0.16), rgba(2, 6, 23, 0.62)), url('pictures/WhatsApp Image 2026-09-05 at 14.19.13.jpeg'); background-size: contain; background-position: center center; background-repeat: no-repeat;"></div>
+                                    <div class="p-7">
+                                        <p class="text-xs font-extrabold uppercase tracking-[0.2em] text-electric-500">Why it matters</p>
+                                        <p class="mt-3 text-slate-700 leading-[1.8]">
+                                            A local partner with engineering feet on the ground means shorter lead times, proper installations, correct commissioning, rapid after-sales response, and accountability. All of these are essential for reliable power generation in Mozambique's demanding industrial and commercial operating environments.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- === 5. WHAT LYZON SHOWCASED (icon-card grid) === -->
+                        <section id="facim-showcase" class="mt-14 reveal-up">
+                            <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+                                <div class="max-w-2xl">
+                                    <p class="text-xs font-extrabold uppercase tracking-[0.22em] text-electric-500">On Display</p>
+                                    <h3 class="mt-2 text-2xl md:text-4xl font-extrabold tracking-tight text-navy-950">What LYZON showcased at FACIM</h3>
+                                </div>
+                                <p class="text-slate-600 leading-relaxed max-w-xl">
+                                    Across the joint stand, visitors were presented with a clear view of LYZON's end-to-end value proposition. This covers from power generation hardware to commissioned systems and long-term maintenance.
+                                </p>
+                            </div>
+
+                            <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                                <div class="rounded-2xl p-6 shadow-soft card-outline bg-white hover:shadow-lift transition-shadow">
+                                    <div class="w-12 h-12 rounded-lg bg-navy-50 flex items-center justify-center">
+                                        <i data-lucide="zap" class="w-6 h-6 text-navy-900"></i>
+                                    </div>
+                                    <h4 class="mt-5 text-lg font-extrabold text-navy-950">Power Generation Solutions</h4>
+                                    <p class="mt-3 text-slate-600 text-sm leading-relaxed">Generator sets and complete power generation systems from the LYZON × Himoinsa portfolio.</p>
+                                </div>
+                                <div class="rounded-2xl p-6 shadow-soft card-outline bg-white hover:shadow-lift transition-shadow">
+                                    <div class="w-12 h-12 rounded-lg bg-navy-50 flex items-center justify-center">
+                                        <i data-lucide="wrench" class="w-6 h-6 text-navy-900"></i>
+                                    </div>
+                                    <h4 class="mt-5 text-lg font-extrabold text-navy-950">Engineering Capabilities</h4>
+                                    <p class="mt-3 text-slate-600 text-sm leading-relaxed">MV/LV design, panel build, site installation, commissioning, and technical documentation.</p>
+                                </div>
+                                <div class="rounded-2xl p-6 shadow-soft card-outline bg-white hover:shadow-lift transition-shadow">
+                                    <div class="w-12 h-12 rounded-lg bg-navy-50 flex items-center justify-center">
+                                        <i data-lucide="shield-check" class="w-6 h-6 text-navy-900"></i>
+                                    </div>
+                                    <h4 class="mt-5 text-lg font-extrabold text-navy-950">Maintenance &amp; After-Sales</h4>
+                                    <p class="mt-3 text-slate-600 text-sm leading-relaxed">Preventive &amp; corrective maintenance, field support, spares, and long-term service contracts.</p>
+                                </div>
+                                <div class="rounded-2xl p-6 shadow-soft card-outline bg-white hover:shadow-lift transition-shadow">
+                                    <div class="w-12 h-12 rounded-lg bg-navy-50 flex items-center justify-center">
+                                        <i data-lucide="folder-kanban" class="w-6 h-6 text-navy-900"></i>
+                                    </div>
+                                    <h4 class="mt-5 text-lg font-extrabold text-navy-950">Reference Projects</h4>
+                                    <p class="mt-3 text-slate-600 text-sm leading-relaxed">Case studies and completed installations across Mozambique's industrial sectors.</p>
+                                </div>
+                            </div>
+
+                            <div class="mt-8 reveal-up">
+                                <div class="rounded-2xl p-7 shadow-soft card-outline bg-gradient-to-br from-emerald-50 to-white border border-emerald-100">
+                                    <div class="flex flex-col lg:flex-row lg:items-center gap-5">
+                                        <div class="w-14 h-14 rounded-xl bg-electric-400 flex items-center justify-center shrink-0">
+                                            <i data-lucide="building-2" class="w-7 h-7 text-navy-950"></i>
+                                        </div>
+                                        <div class="flex-1">
+                                            <p class="text-xs font-extrabold uppercase tracking-[0.22em] text-electric-500">Industries &amp; Services Involved</p>
+                                            <div class="mt-3 flex flex-wrap gap-2.5">
+                                                <span class="inline-flex items-center rounded-full px-3.5 py-1.5 bg-white border border-emerald-200 text-navy-950 text-xs font-bold">Power Generation</span>
+                                                <span class="inline-flex items-center rounded-full px-3.5 py-1.5 bg-white border border-emerald-200 text-navy-950 text-xs font-bold">MV / LV Electrical</span>
+                                                <span class="inline-flex items-center rounded-full px-3.5 py-1.5 bg-white border border-emerald-200 text-navy-950 text-xs font-bold">Automation &amp; Control</span>
+                                                <span class="inline-flex items-center rounded-full px-3.5 py-1.5 bg-white border border-emerald-200 text-navy-950 text-xs font-bold">Commissioning</span>
+                                                <span class="inline-flex items-center rounded-full px-3.5 py-1.5 bg-white border border-emerald-200 text-navy-950 text-xs font-bold">Maintenance</span>
+                                                <span class="inline-flex items-center rounded-full px-3.5 py-1.5 bg-white border border-emerald-200 text-navy-950 text-xs font-bold">HSE &amp; Compliance</span>
+                                                <span class="inline-flex items-center rounded-full px-3.5 py-1.5 bg-white border border-emerald-200 text-navy-950 text-xs font-bold">Mining · Industry · Commerce</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- === 6 & 7. SHORT CLOSING STATEMENT + "READ MORE / VIEW MORE" CTA === -->
+                        <section class="mt-14 reveal-up">
+                            <div class="grid lg:grid-cols-5 gap-6 lg:gap-8 items-stretch">
+                                <div class="lg:col-span-3 rounded-2xl p-7 md:p-10 shadow-soft card-outline bg-navy-950 text-white">
+                                    <p class="text-xs font-extrabold uppercase tracking-[0.22em] text-electric-300">Closing · FACIM 2026</p>
+                                    <h3 class="mt-3 text-2xl md:text-3xl font-extrabold tracking-tight text-white">Technical expertise, local presence, reliable delivery</h3>
+                                    <p class="mt-5 text-slate-200 text-base leading-[1.8]">
+                                        FACIM 2026 demonstrated LYZON Engineering &amp; Services' technical expertise, established local presence, and proven ability to provide reliable electrical and power generation solutions to Mozambique's industrial and commercial sectors. This work is supported by a strong international partner ecosystem.
+                                    </p>
+                                    <p class="mt-4 text-slate-300 leading-[1.8]">
+                                        The event reinforced LYZON's long-standing relationships with customers and partners, and set the basis for new projects across the country.
+                                    </p>
+                                </div>
+
+                                <div class="lg:col-span-2 rounded-2xl p-7 md:p-10 shadow-soft card-outline bg-white flex flex-col justify-between">
+                                    <div>
+                                        <p class="text-xs font-extrabold uppercase tracking-[0.22em] text-electric-500">View More</p>
+                                        <h3 class="mt-3 text-2xl font-extrabold tracking-tight text-navy-950">Discuss your next project with the team that represented LYZON at FACIM.</h3>
+                                        <p class="mt-4 text-slate-600 leading-relaxed">
+                                            Request a quote, reference a power generation or electrical scope, and the LYZON team will prepare a tailored response.
+                                        </p>
+                                    </div>
+                                    <div class="mt-7 grid sm:grid-cols-2 gap-3">
+                                        <a href="index.html#contact" class="inline-flex items-center justify-center px-5 py-3.5 rounded-xl font-extrabold text-navy-950 bg-electric-400 hover:bg-electric-300 transition-colors shadow-soft">
+                                            <i data-lucide="mail" class="mr-2 w-4 h-4"></i>
+                                            Request Quote
+                                        </a>
+                                        <a href="projects.html" class="inline-flex items-center justify-center px-5 py-3.5 rounded-xl font-extrabold text-navy-950 bg-white border border-navy-950/15 hover:bg-navy-50 transition-colors">
+                                            View Projects
+                                            <i data-lucide="arrow-right" class="ml-2 w-4 h-4"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+            </article>
+            <!-- ============== END OF MODULAR FACIM 2026 EVENT BLOCK ============== -->
+
+            <!-- ========================================================================== -->
+            <!-- MODULAR EVENT BLOCK: INTERNATIONAL WOMEN'S DAY (copy FACIM structure)     -->
+            <!-- Repeat the article block below for future events (Labour Day, etc.)       -->
+            <!-- ========================================================================== -->
+            <article id="event-womens-day-2026" class="bg-white text-navy-950 border-t border-slate-100">
+                <!-- Background tint band only between this and previous article (soft visual separator) -->
+                <div class="bg-slate-50 text-navy-950 border-b border-slate-100">
+                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-14">
+                        <div class="flex items-center gap-4 reveal-up">
+                            <div class="h-px flex-1 bg-gradient-to-r from-transparent via-slate-300 to-transparent"></div>
+                            <p class="text-xs font-extrabold uppercase tracking-[0.28em] text-slate-500">Next Event · Featured</p>
+                            <div class="h-px flex-1 bg-gradient-to-r from-transparent via-slate-300 to-transparent"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 1 + 2. HERO VISUAL + TITLE + SHORT INTRO -->
+                <section class="bg-navy-950 text-white">
+                    <div class="hero-grid hero-grid--womensday">
+                        <div class="w-full pl-2 pr-4 sm:pl-4 sm:pr-6 lg:pl-6 lg:pr-8 py-12 lg:py-16 hero-layout">
+                            <div class="hero-content-panel reveal-up">
+                                <div class="flex flex-wrap items-center gap-3">
+                                    <p class="hero-kicker inline-flex items-center gap-2 text-electric-300 font-extrabold uppercase tracking-[0.2em] text-xs">
+                                        <i data-lucide="heart-handshake" class="w-4 h-4"></i>
+                                        Company &amp; People
+                                    </p>
+                                    <span class="inline-flex items-center gap-2 rounded-full bg-white/10 border border-white/15 px-3 py-1.5 text-[11px] font-extrabold uppercase tracking-[0.18em] text-electric-200">
+                                        <i data-lucide="flower-2" class="w-3.5 h-3.5"></i>
+                                        International Women's Day
+                                    </span>
+                                </div>
+                                <h2 class="mt-4 text-4xl md:text-6xl font-extrabold tracking-tight leading-[0.97] hero-heading">
+                                    <span class="block hero-heading-brand">Celebrating Women</span>
+                                    <span class="block hero-heading-main text-electric-200 mt-2 text-[0.58em] font-bold tracking-tight leading-tight">at LYZON</span>
+                                    <span class="block hero-heading-sub mt-3 text-[0.3em] text-slate-200/90">International Women's Day · LYZON Team</span>
+                                </h2>
+                                <div class="hero-divider mt-6" aria-hidden="true"></div>
+                                <p class="hero-summary mt-5 text-lg md:text-xl text-slate-200 max-w-2xl leading-relaxed">
+                                    At LYZON Engineering &amp; Services, International Women's Day was an opportunity to recognise and celebrate the women who contribute to our team and our continued growth.
+                                </p>
+                                <div class="mt-8 grid sm:grid-cols-3 gap-4 max-w-2xl">
+                                    <div class="reveal-right rounded-xl border border-white/15 bg-white/6 backdrop-blur-sm px-4 py-3.5">
+                                        <p class="text-[10px] font-extrabold uppercase tracking-[0.2em] text-electric-300">Occasion</p>
+                                        <p class="mt-1 font-extrabold text-white text-base">International Women's Day</p>
+                                    </div>
+                                    <div class="reveal-right rounded-xl border border-white/15 bg-white/6 backdrop-blur-sm px-4 py-3.5" style="transition-delay: 60ms">
+                                        <p class="text-[10px] font-extrabold uppercase tracking-[0.2em] text-electric-300">Location</p>
+                                        <p class="mt-1 font-extrabold text-white text-base">LYZON · Mozambique</p>
+                                    </div>
+                                    <div class="reveal-right rounded-xl border border-white/15 bg-white/6 backdrop-blur-sm px-4 py-3.5" style="transition-delay: 120ms">
+                                        <p class="text-[10px] font-extrabold uppercase tracking-[0.2em] text-electric-300">Audience</p>
+                                        <p class="mt-1 font-extrabold text-white text-base">LYZON Team Members</p>
+                                    </div>
+                                </div>
+                                <div class="hero-actions mt-7 flex flex-wrap gap-4">
+                                    <a href="#womensday-highlights" class="hero-action-primary inline-flex items-center justify-center min-w-[200px] px-7 py-4 rounded-full font-extrabold text-navy-950 bg-electric-400 hover:bg-electric-300 transition-colors shadow-lift">
+                                        Key Highlights
+                                        <i data-lucide="chevrons-down" class="ml-2 w-4 h-4"></i>
+                                    </a>
+                                    <a href="index.html#about" class="hero-action-secondary inline-flex items-center justify-center min-w-[200px] px-7 py-4 rounded-full font-extrabold border border-white/25 hover:border-electric-300 hover:text-electric-200 transition-colors">
+                                        <i data-lucide="users-round" class="mr-2 w-4 h-4"></i>
+                                        About the LYZON Team
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Event content wrapper -->
+                <div class="bg-slate-50 py-20 lg:py-24">
+                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+                        <!-- 3. SHORT EVENT INTRODUCTION (extended) -->
+                        <section class="reveal-up">
+                            <div class="rounded-2xl shadow-soft card-outline bg-white p-7 md:p-10">
+                                <div class="grid lg:grid-cols-3 gap-8 lg:gap-10 items-start">
+                                    <div class="lg:col-span-1">
+                                        <p class="text-xs font-extrabold uppercase tracking-[0.22em] text-electric-500">About the Occasion</p>
+                                        <h3 class="mt-2 text-2xl md:text-3xl font-extrabold tracking-tight text-navy-950">A simple gesture of recognition</h3>
+                                        <div class="mt-5 w-12 h-12 rounded-xl bg-navy-50 flex items-center justify-center">
+                                            <i data-lucide="bouquet" class="w-6 h-6 text-navy-900"></i>
+                                        </div>
+                                    </div>
+                                    <div class="lg:col-span-2 text-slate-700 text-base md:text-lg leading-[1.8] space-y-5">
+                                        <p>
+                                            As part of the celebration, flowers were presented to the women working alongside us at LYZON. This was a simple gesture of appreciation and recognition for their contribution, commitment, and role within the company.
+                                        </p>
+                                        <p>
+                                            The occasion brought our team together and reflected the importance we place on recognising the people behind our work. We mean the individuals who, every day, contribute to LYZON's projects, operations, and continued growth across Mozambique.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- 4. LYZON × SECOND PHOTO PANEL (analogous to FACIM partnership split) -->
+                        <section id="womensday-moment" class="mt-14 reveal-up">
+                            <div class="grid lg:grid-cols-2 gap-6 lg:gap-8">
+                                <div class="rounded-2xl p-7 shadow-soft card-outline bg-white">
+                                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-electric-50 text-electric-700 border border-electric-200/60 text-xs font-extrabold uppercase tracking-[0.18em]">
+                                        <i data-lucide="camera" class="w-4 h-4"></i>
+                                        Moment from the Day
+                                    </div>
+                                    <h3 class="mt-6 text-2xl md:text-3xl font-extrabold tracking-tight text-navy-950">Presenting flowers to the women of LYZON</h3>
+                                    <p class="mt-4 text-slate-700 leading-[1.8]">
+                                        International Women's Day at LYZON was an internal team moment. Every woman on the team received a bouquet as a visible, tangible thank-you for the day-to-day work they deliver across projects, administration, commercial, technical, and support functions.
+                                    </p>
+                                    <p class="mt-4 text-slate-700 leading-[1.8]">
+                                        These small moments contribute to a culture where the people behind LYZON are recognised individually. This reflects our belief that teams are built through visible appreciation, consistent respect, and shared celebration.
+                                    </p>
+                                    <div class="mt-7 grid grid-cols-2 gap-4">
+                                        <div class="rounded-xl bg-slate-50 border border-slate-200 p-4">
+                                            <p class="text-[10px] font-extrabold uppercase tracking-[0.2em] text-electric-500">Gesture</p>
+                                            <p class="mt-1 font-extrabold text-navy-950">Flowers for every woman on the team</p>
+                                        </div>
+                                        <div class="rounded-xl bg-slate-50 border border-slate-200 p-4">
+                                            <p class="text-[10px] font-extrabold uppercase tracking-[0.2em] text-electric-500">Audience</p>
+                                            <p class="mt-1 font-extrabold text-navy-950">All LYZON women · cross-department</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="rounded-2xl shadow-soft card-outline overflow-hidden bg-white">
+                                    <div class="relative h-full min-h-[320px] overflow-hidden" style="background-color: #052e16; background-image: linear-gradient(180deg, rgba(2, 6, 23, 0.16), rgba(2, 6, 23, 0.62)), url('pictures/WhatsApp Image 2026-09-30 at 14.22.59.jpeg'); background-size: contain; background-position: center center; background-repeat: no-repeat;"></div>
+                                    <div class="p-7">
+                                        <p class="text-xs font-extrabold uppercase tracking-[0.2em] text-electric-500">Why it matters</p>
+                                        <p class="mt-3 text-slate-700 leading-[1.8]">
+                                            Celebrating International Women's Day inside LYZON strengthens team culture, creates visibility for the women who run our operations, and reinforces the inclusive environment required for long-term project delivery.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- 5. KEY HIGHLIGHTS showcased grid (3 cards) -->
+                        <section id="womensday-highlights" class="mt-14 reveal-up">
+                            <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+                                <div class="max-w-2xl">
+                                    <p class="text-xs font-extrabold uppercase tracking-[0.22em] text-electric-500">Key Highlights</p>
+                                    <h3 class="mt-2 text-2xl md:text-4xl font-extrabold tracking-tight text-navy-950">What this day represented for LYZON</h3>
+                                </div>
+                                <p class="text-slate-600 leading-relaxed max-w-xl">
+                                    Three themes defined the day: appreciation, individual recognition, and team cohesion.
+                                </p>
+                            </div>
+
+                            <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                                <div class="rounded-2xl p-6 shadow-soft card-outline bg-white hover:shadow-lift transition-shadow">
+                                    <div class="w-12 h-12 rounded-lg bg-navy-50 flex items-center justify-center">
+                                        <i data-lucide="heart" class="w-6 h-6 text-navy-900"></i>
+                                    </div>
+                                    <p class="mt-5 text-[11px] font-extrabold uppercase tracking-[0.22em] text-electric-500">Appreciation</p>
+                                    <h4 class="mt-2 text-lg font-extrabold text-navy-950">Recognising the women who contribute to LYZON</h4>
+                                    <p class="mt-3 text-slate-600 text-sm leading-relaxed">Visible recognition for the women who contribute across every function of LYZON Engineering &amp; Services.</p>
+                                </div>
+                                <div class="rounded-2xl p-6 shadow-soft card-outline bg-white hover:shadow-lift transition-shadow">
+                                    <div class="w-12 h-12 rounded-lg bg-navy-50 flex items-center justify-center">
+                                        <i data-lucide="badge-check" class="w-6 h-6 text-navy-900"></i>
+                                    </div>
+                                    <p class="mt-5 text-[11px] font-extrabold uppercase tracking-[0.22em] text-electric-500">Our People</p>
+                                    <h4 class="mt-2 text-lg font-extrabold text-navy-950">Celebrating the individuals behind our projects and operations</h4>
+                                    <p class="mt-3 text-slate-600 text-sm leading-relaxed">The people of LYZON, and specifically the women who build the company day by day, are the foundation of our work.</p>
+                                </div>
+                                <div class="rounded-2xl p-6 shadow-soft card-outline bg-white hover:shadow-lift transition-shadow">
+                                    <div class="w-12 h-12 rounded-lg bg-navy-50 flex items-center justify-center">
+                                        <i data-lucide="users-round" class="w-6 h-6 text-navy-900"></i>
+                                    </div>
+                                    <p class="mt-5 text-[11px] font-extrabold uppercase tracking-[0.22em] text-electric-500">Together</p>
+                                    <h4 class="mt-2 text-lg font-extrabold text-navy-950">Strengthening our team and company culture</h4>
+                                    <p class="mt-3 text-slate-600 text-sm leading-relaxed">Moments that bring the full team together reinforce the shared culture that underpins every successful LYZON project.</p>
+                                </div>
+                            </div>
+
+                            <!-- analogous to FACIM industries banner: "company culture" values banner -->
+                            <div class="mt-8 reveal-up">
+                                <div class="rounded-2xl p-7 shadow-soft card-outline bg-gradient-to-br from-pink-50 via-emerald-50 to-white border border-emerald-100/60">
+                                    <div class="flex flex-col lg:flex-row lg:items-center gap-5">
+                                        <div class="w-14 h-14 rounded-xl bg-electric-400 flex items-center justify-center shrink-0">
+                                            <i data-lucide="flower-2" class="w-7 h-7 text-navy-950"></i>
+                                        </div>
+                                        <div class="flex-1">
+                                            <p class="text-xs font-extrabold uppercase tracking-[0.22em] text-electric-500">Company Values &amp; Culture · Involved</p>
+                                            <div class="mt-3 flex flex-wrap gap-2.5">
+                                                <span class="inline-flex items-center rounded-full px-3.5 py-1.5 bg-white border border-emerald-200 text-navy-950 text-xs font-bold">Recognition</span>
+                                                <span class="inline-flex items-center rounded-full px-3.5 py-1.5 bg-white border border-emerald-200 text-navy-950 text-xs font-bold">Team &amp; People</span>
+                                                <span class="inline-flex items-center rounded-full px-3.5 py-1.5 bg-white border border-emerald-200 text-navy-950 text-xs font-bold">Women in Engineering</span>
+                                                <span class="inline-flex items-center rounded-full px-3.5 py-1.5 bg-white border border-emerald-200 text-navy-950 text-xs font-bold">Company Culture</span>
+                                                <span class="inline-flex items-center rounded-full px-3.5 py-1.5 bg-white border border-emerald-200 text-navy-950 text-xs font-bold">Appreciation</span>
+                                                <span class="inline-flex items-center rounded-full px-3.5 py-1.5 bg-white border border-emerald-200 text-navy-950 text-xs font-bold">LYZON · Cross-Functional</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- 6 + 7. SHORT CLOSING + READ MORE CTA -->
+                        <section class="mt-14 reveal-up">
+                            <div class="grid lg:grid-cols-5 gap-6 lg:gap-8 items-stretch">
+                                <div class="lg:col-span-3 rounded-2xl p-7 md:p-10 shadow-soft card-outline bg-navy-950 text-white">
+                                    <p class="text-xs font-extrabold uppercase tracking-[0.22em] text-electric-300">Closing · International Women's Day</p>
+                                    <h3 class="mt-3 text-2xl md:text-3xl font-extrabold tracking-tight text-white">Our people. Our team. Our culture.</h3>
+                                    <p class="mt-5 text-slate-200 text-base leading-[1.8]">
+                                        International Women's Day 2026 at LYZON was a team moment of appreciation. It reflected a culture where individual contributions are recognised openly, and where the women of LYZON are celebrated for their daily commitment to our company, our clients, and our shared success.
+                                    </p>
+                                    <p class="mt-4 text-slate-300 leading-[1.8]">
+                                        Moments like this strengthen the bonds within our team, support the culture we want to carry into every project, and remind us that recognition matters always.
+                                    </p>
+                                </div>
+
+                                <div class="lg:col-span-2 rounded-2xl p-7 md:p-10 shadow-soft card-outline bg-white flex flex-col justify-between">
+                                    <div>
+                                        <p class="text-xs font-extrabold uppercase tracking-[0.22em] text-electric-500">Read More</p>
+                                        <h3 class="mt-3 text-2xl font-extrabold tracking-tight text-navy-950">See more about LYZON, our team, and how we work.</h3>
+                                        <p class="mt-4 text-slate-600 leading-relaxed">
+                                            Learn more about LYZON, the company background, and the way our team operates every day across Mozambique.
+                                        </p>
+                                    </div>
+                                    <div class="mt-7 grid sm:grid-cols-2 gap-3">
+                                        <a href="index.html#about" class="inline-flex items-center justify-center px-5 py-3.5 rounded-xl font-extrabold text-navy-950 bg-electric-400 hover:bg-electric-300 transition-colors shadow-soft">
+                                            <i data-lucide="flag" class="mr-2 w-4 h-4"></i>
+                                            About LYZON
+                                        </a>
+                                        <a href="index.html#contact" class="inline-flex items-center justify-center px-5 py-3.5 rounded-xl font-extrabold text-navy-950 bg-white border border-navy-950/15 hover:bg-navy-50 transition-colors">
+                                            Join the Team
+                                            <i data-lucide="arrow-right" class="ml-2 w-4 h-4"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+            </article>
+            <!-- ============== END OF MODULAR WOMEN'S DAY EVENT BLOCK ============== -->
+
+            <!-- ========================================================================== -->
+            <!-- MODULAR EVENT BLOCK: LABOUR DAY (copy FACIM / Women's Day structure)     -->
+            <!-- ========================================================================== -->
+            <article id="event-labour-day-2026" class="bg-white text-navy-950 border-t border-slate-100">
+                <div class="bg-slate-50 text-navy-950 border-b border-slate-100">
+                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-14">
+                        <div class="flex items-center gap-4 reveal-up">
+                            <div class="h-px flex-1 bg-gradient-to-r from-transparent via-slate-300 to-transparent"></div>
+                            <p class="text-xs font-extrabold uppercase tracking-[0.28em] text-slate-500">Next Event · Featured</p>
+                            <div class="h-px flex-1 bg-gradient-to-r from-transparent via-slate-300 to-transparent"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 1 + 2. HERO VISUAL + TITLE + SHORT INTRO -->
+                <section class="bg-navy-950 text-white">
+                    <div class="hero-grid hero-grid--labourday">
+                        <div class="w-full pl-2 pr-4 sm:pl-4 sm:pr-6 lg:pl-6 lg:pr-8 py-12 lg:py-16 hero-layout">
+                            <div class="hero-content-panel reveal-up">
+                                <div class="flex flex-wrap items-center gap-3">
+                                    <p class="hero-kicker inline-flex items-center gap-2 text-electric-300 font-extrabold uppercase tracking-[0.2em] text-xs">
+                                        <i data-lucide="hard-hat" class="w-4 h-4"></i>
+                                        Company &amp; People
+                                    </p>
+                                    <span class="inline-flex items-center gap-2 rounded-full bg-white/10 border border-white/15 px-3 py-1.5 text-[11px] font-extrabold uppercase tracking-[0.18em] text-electric-200">
+                                        <i data-lucide="hammer" class="w-3.5 h-3.5"></i>
+                                        Labour Day
+                                    </span>
+                                </div>
+                                <h2 class="mt-4 text-4xl md:text-6xl font-extrabold tracking-tight leading-[0.97] hero-heading">
+                                    <span class="block hero-heading-brand">Celebrating Labour</span>
+                                    <span class="block hero-heading-main text-electric-200 mt-2 text-[0.58em] font-bold tracking-tight leading-tight">Day at LYZON</span>
+                                    <span class="block hero-heading-sub mt-3 text-[0.3em] text-slate-200/90">Labour Day · LYZON Team · Mozambique</span>
+                                </h2>
+                                <div class="hero-divider mt-6" aria-hidden="true"></div>
+                                <p class="hero-summary mt-5 text-lg md:text-xl text-slate-200 max-w-2xl leading-relaxed">
+                                    Labour Day was an opportunity for the LYZON team to come together and celebrate the people whose dedication, hard work, and contribution are an important part of our company's success.
+                                </p>
+                                <div class="mt-8 grid sm:grid-cols-3 gap-4 max-w-2xl">
+                                    <div class="reveal-right rounded-xl border border-white/15 bg-white/6 backdrop-blur-sm px-4 py-3.5">
+                                        <p class="text-[10px] font-extrabold uppercase tracking-[0.2em] text-electric-300">Occasion</p>
+                                        <p class="mt-1 font-extrabold text-white text-base">Labour Day</p>
+                                    </div>
+                                    <div class="reveal-right rounded-xl border border-white/15 bg-white/6 backdrop-blur-sm px-4 py-3.5" style="transition-delay: 60ms">
+                                        <p class="text-[10px] font-extrabold uppercase tracking-[0.2em] text-electric-300">Location</p>
+                                        <p class="mt-1 font-extrabold text-white text-base">LYZON · Mozambique</p>
+                                    </div>
+                                    <div class="reveal-right rounded-xl border border-white/15 bg-white/6 backdrop-blur-sm px-4 py-3.5" style="transition-delay: 120ms">
+                                        <p class="text-[10px] font-extrabold uppercase tracking-[0.2em] text-electric-300">Audience</p>
+                                        <p class="mt-1 font-extrabold text-white text-base">Full LYZON Team</p>
+                                    </div>
+                                </div>
+                                <div class="hero-actions mt-7 flex flex-wrap gap-4">
+                                    <a href="#labourday-highlights" class="hero-action-primary inline-flex items-center justify-center min-w-[200px] px-7 py-4 rounded-full font-extrabold text-navy-950 bg-electric-400 hover:bg-electric-300 transition-colors shadow-lift">
+                                        Key Highlights
+                                        <i data-lucide="chevrons-down" class="ml-2 w-4 h-4"></i>
+                                    </a>
+                                    <a href="index.html#about" class="hero-action-secondary inline-flex items-center justify-center min-w-[200px] px-7 py-4 rounded-full font-extrabold border border-white/25 hover:border-electric-300 hover:text-electric-200 transition-colors">
+                                        <i data-lucide="users-round" class="mr-2 w-4 h-4"></i>
+                                        About the LYZON Team
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Event content wrapper -->
+                <div class="bg-slate-50 py-20 lg:py-24">
+                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+                        <!-- 3. SHORT EVENT INTRODUCTION -->
+                        <section class="reveal-up">
+                            <div class="rounded-2xl shadow-soft card-outline bg-white p-7 md:p-10">
+                                <div class="grid lg:grid-cols-3 gap-8 lg:gap-10 items-start">
+                                    <div class="lg:col-span-1">
+                                        <p class="text-xs font-extrabold uppercase tracking-[0.22em] text-electric-500">About the Occasion</p>
+                                        <h3 class="mt-2 text-2xl md:text-3xl font-extrabold tracking-tight text-navy-950">A team day of recognition</h3>
+                                        <div class="mt-5 w-12 h-12 rounded-xl bg-navy-50 flex items-center justify-center">
+                                            <i data-lucide="handshake" class="w-6 h-6 text-navy-900"></i>
+                                        </div>
+                                    </div>
+                                    <div class="lg:col-span-2 text-slate-700 text-base md:text-lg leading-[1.8] space-y-5">
+                                        <p>
+                                            The occasion brought our team together in a relaxed and positive environment, recognising the commitment and effort of the people who contribute to LYZON's daily operations and projects.
+                                        </p>
+                                        <p>
+                                            At LYZON, we value our people and believe that a strong team is at the heart of delivering quality work and building a successful company. Labour Day was one more opportunity to recognise that openly, together.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- 4. SECOND PHOTO PANEL (secondary Labour Day photo) -->
+                        <section id="labourday-moment" class="mt-14 reveal-up">
+                            <div class="grid lg:grid-cols-2 gap-6 lg:gap-8">
+                                <div class="rounded-2xl p-7 shadow-soft card-outline bg-white">
+                                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-electric-50 text-electric-700 border border-electric-200/60 text-xs font-extrabold uppercase tracking-[0.18em]">
+                                        <i data-lucide="camera" class="w-4 h-4"></i>
+                                        Moment from the Day
+                                    </div>
+                                    <h3 class="mt-6 text-2xl md:text-3xl font-extrabold tracking-tight text-navy-950">Team spirit, recognised openly</h3>
+                                    <p class="mt-4 text-slate-700 leading-[1.8]">
+                                        Labour Day at LYZON was an internal celebration for the whole team. It was a moment to step back from projects and operations, and simply celebrate together the people who make the company run every day.
+                                    </p>
+                                    <p class="mt-4 text-slate-700 leading-[1.8]">
+                                        These relaxed team gatherings are part of how LYZON builds its culture: recognising individual effort, strengthening the connections across departments, and keeping the focus on people behind every successful delivery.
+                                    </p>
+                                    <div class="mt-7 grid grid-cols-2 gap-4">
+                                        <div class="rounded-xl bg-slate-50 border border-slate-200 p-4">
+                                            <p class="text-[10px] font-extrabold uppercase tracking-[0.2em] text-electric-500">Audience</p>
+                                            <p class="mt-1 font-extrabold text-navy-950">Full LYZON team · all departments</p>
+                                        </div>
+                                        <div class="rounded-xl bg-slate-50 border border-slate-200 p-4">
+                                            <p class="text-[10px] font-extrabold uppercase tracking-[0.2em] text-electric-500">Mood</p>
+                                            <p class="mt-1 font-extrabold text-navy-950">Relaxed · positive · shared</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="rounded-2xl shadow-soft card-outline overflow-hidden bg-white">
+                                    <div class="relative h-full min-h-[320px] overflow-hidden" style="background-color: #052e16; background-image: linear-gradient(180deg, rgba(2, 6, 23, 0.18), rgba(2, 6, 23, 0.68)), url('pictures/WhatsApp Image 2026-09-30 at 16.31.41.jpeg'); background-size: contain; background-position: center center; background-repeat: no-repeat;"></div>
+                                    <div class="p-7">
+                                        <p class="text-xs font-extrabold uppercase tracking-[0.2em] text-electric-500">Why it matters</p>
+                                        <p class="mt-3 text-slate-700 leading-[1.8]">
+                                            Celebrating Labour Day together keeps LYZON's culture grounded in recognition. This reinforces the belief that teams that celebrate together deliver together, and that a strong company is built day by day by its people.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- 5. KEY HIGHLIGHTS (3 cards, exact user titles) -->
+                        <section id="labourday-highlights" class="mt-14 reveal-up">
+                            <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+                                <div class="max-w-2xl">
+                                    <p class="text-xs font-extrabold uppercase tracking-[0.22em] text-electric-500">Key Highlights</p>
+                                    <h3 class="mt-2 text-2xl md:text-4xl font-extrabold tracking-tight text-navy-950">What Labour Day meant for the LYZON team</h3>
+                                </div>
+                                <p class="text-slate-600 leading-relaxed max-w-xl">
+                                    Three themes defined the day: people, connection, and open appreciation.
+                                </p>
+                            </div>
+
+                            <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                                <div class="rounded-2xl p-6 shadow-soft card-outline bg-white hover:shadow-lift transition-shadow">
+                                    <div class="w-12 h-12 rounded-lg bg-navy-50 flex items-center justify-center">
+                                        <i data-lucide="users-round" class="w-6 h-6 text-navy-900"></i>
+                                    </div>
+                                    <p class="mt-5 text-[11px] font-extrabold uppercase tracking-[0.22em] text-electric-500">Our People</p>
+                                    <h4 class="mt-2 text-lg font-extrabold text-navy-950">Recognising the dedication and contribution of the LYZON team</h4>
+                                    <p class="mt-3 text-slate-600 text-sm leading-relaxed">Every person on the LYZON team, across technical, commercial, support, and project functions, was part of the recognition.</p>
+                                </div>
+                                <div class="rounded-2xl p-6 shadow-soft card-outline bg-white hover:shadow-lift transition-shadow">
+                                    <div class="w-12 h-12 rounded-lg bg-navy-50 flex items-center justify-center">
+                                        <i data-lucide="smile" class="w-6 h-6 text-navy-900"></i>
+                                    </div>
+                                    <p class="mt-5 text-[11px] font-extrabold uppercase tracking-[0.22em] text-electric-500">Team Spirit</p>
+                                    <h4 class="mt-2 text-lg font-extrabold text-navy-950">Celebrating together and strengthening the connection within our team</h4>
+                                    <p class="mt-3 text-slate-600 text-sm leading-relaxed">A relaxed, positive shared moment brings teams closer. Labour Day at LYZON was exactly that kind of day.</p>
+                                </div>
+                                <div class="rounded-2xl p-6 shadow-soft card-outline bg-white hover:shadow-lift transition-shadow">
+                                    <div class="w-12 h-12 rounded-lg bg-navy-50 flex items-center justify-center">
+                                        <i data-lucide="heart-handshake" class="w-6 h-6 text-navy-900"></i>
+                                    </div>
+                                    <p class="mt-5 text-[11px] font-extrabold uppercase tracking-[0.22em] text-electric-500">Appreciation</p>
+                                    <h4 class="mt-2 text-lg font-extrabold text-navy-950">Recognising the hard work behind our projects and operations</h4>
+                                    <p class="mt-3 text-slate-600 text-sm leading-relaxed">Open recognition of the commitment and daily effort that powers LYZON's installations, commissioning, and field services.</p>
+                                </div>
+                            </div>
+
+                            <!-- Values banner (analogous to FACIM industries banner) -->
+                            <div class="mt-8 reveal-up">
+                                <div class="rounded-2xl p-7 shadow-soft card-outline bg-gradient-to-br from-amber-50 via-emerald-50 to-white border border-emerald-100/60">
+                                    <div class="flex flex-col lg:flex-row lg:items-center gap-5">
+                                        <div class="w-14 h-14 rounded-xl bg-electric-400 flex items-center justify-center shrink-0">
+                                            <i data-lucide="hard-hat" class="w-7 h-7 text-navy-950"></i>
+                                        </div>
+                                        <div class="flex-1">
+                                            <p class="text-xs font-extrabold uppercase tracking-[0.22em] text-electric-500">Company Values &amp; Culture · Involved</p>
+                                            <div class="mt-3 flex flex-wrap gap-2.5">
+                                                <span class="inline-flex items-center rounded-full px-3.5 py-1.5 bg-white border border-emerald-200 text-navy-950 text-xs font-bold">Our People First</span>
+                                                <span class="inline-flex items-center rounded-full px-3.5 py-1.5 bg-white border border-emerald-200 text-navy-950 text-xs font-bold">Team Culture</span>
+                                                <span class="inline-flex items-center rounded-full px-3.5 py-1.5 bg-white border border-emerald-200 text-navy-950 text-xs font-bold">Recognition</span>
+                                                <span class="inline-flex items-center rounded-full px-3.5 py-1.5 bg-white border border-emerald-200 text-navy-950 text-xs font-bold">Labour Day</span>
+                                                <span class="inline-flex items-center rounded-full px-3.5 py-1.5 bg-white border border-emerald-200 text-navy-950 text-xs font-bold">Appreciation</span>
+                                                <span class="inline-flex items-center rounded-full px-3.5 py-1.5 bg-white border border-emerald-200 text-navy-950 text-xs font-bold">LYZON · Cross-Department</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- 6 + 7. SHORT CLOSING + READ MORE CTA -->
+                        <section class="mt-14 reveal-up">
+                            <div class="grid lg:grid-cols-5 gap-6 lg:gap-8 items-stretch">
+                                <div class="lg:col-span-3 rounded-2xl p-7 md:p-10 shadow-soft card-outline bg-navy-950 text-white">
+                                    <p class="text-xs font-extrabold uppercase tracking-[0.22em] text-electric-300">Closing · Labour Day</p>
+                                    <h3 class="mt-3 text-2xl md:text-3xl font-extrabold tracking-tight text-white">A strong team. A shared culture. A successful LYZON.</h3>
+                                    <p class="mt-5 text-slate-200 text-base leading-[1.8]">
+                                        Labour Day 2026 at LYZON was a team day of shared recognition. It celebrated the people who contribute to our company every day through their dedication, hard work, and commitment.
+                                    </p>
+                                    <p class="mt-4 text-slate-300 leading-[1.8]">
+                                        Moments like these are part of how we build and keep the strong team we need to deliver quality work consistently for our clients and a strong company for everyone at LYZON.
+                                    </p>
+                                </div>
+
+                                <div class="lg:col-span-2 rounded-2xl p-7 md:p-10 shadow-soft card-outline bg-white flex flex-col justify-between">
+                                    <div>
+                                        <p class="text-xs font-extrabold uppercase tracking-[0.22em] text-electric-500">Read More</p>
+                                        <h3 class="mt-3 text-2xl font-extrabold tracking-tight text-navy-950">See more about LYZON, our team, and how we work.</h3>
+                                        <p class="mt-4 text-slate-600 leading-relaxed">
+                                            Learn more about LYZON, the company background, and the team culture that supports every project we deliver in Mozambique.
+                                        </p>
+                                    </div>
+                                    <div class="mt-7 grid sm:grid-cols-2 gap-3">
+                                        <a href="index.html#about" class="inline-flex items-center justify-center px-5 py-3.5 rounded-xl font-extrabold text-navy-950 bg-electric-400 hover:bg-electric-300 transition-colors shadow-soft">
+                                            <i data-lucide="flag" class="mr-2 w-4 h-4"></i>
+                                            About LYZON
+                                        </a>
+                                        <a href="index.html#contact" class="inline-flex items-center justify-center px-5 py-3.5 rounded-xl font-extrabold text-navy-950 bg-white border border-navy-950/15 hover:bg-navy-50 transition-colors">
+                                            Join the Team
+                                            <i data-lucide="arrow-right" class="ml-2 w-4 h-4"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+            </article>
+            <!-- ============== END OF MODULAR LABOUR DAY EVENT BLOCK ============== -->
+        </main>
+
+        <footer class="bg-navy-950 border-t border-white/10">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+                <div class="grid md:grid-cols-4 gap-10">
+                    <div>
+                        <div class="flex items-center">
+                            <span class="logo-shell-footer">
+                                <img src="pictures/lyzon-logo-transparent.png" alt="Lyzon Engineering Logo" class="logo-img h-10 w-auto object-contain">
+                            </span>
+                        </div>
+                        <p class="mt-5 text-sm text-slate-200 leading-relaxed">
+                            LYZON Engineering &amp; Services, Lda. Industrial electrical materials and engineering support since 2009.
+                        </p>
+                    </div>
+
+                    <div>
+                        <p class="text-xs font-extrabold uppercase tracking-[0.2em] text-slate-300">Company</p>
+                        <div class="mt-4 grid gap-3 text-sm font-semibold">
+                            <a class="text-slate-200 hover:text-white transition-colors" href="events.html">Events</a>
+                            <a class="text-slate-200 hover:text-white transition-colors" href="projects.html">Projects</a>
+                            <a class="text-slate-200 hover:text-white transition-colors" href="policy.html">Policy</a>
+                            <a class="text-slate-200 hover:text-white transition-colors" href="index.html#contact">Contact</a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <p class="text-xs font-extrabold uppercase tracking-[0.2em] text-slate-300">Services</p>
+                        <div class="mt-4 grid gap-3 text-sm font-semibold">
+                            <a class="text-slate-200 hover:text-white transition-colors" href="services.html#service-catalog">Electrical Design</a>
+                            <a class="text-slate-200 hover:text-white transition-colors" href="services.html#service-catalog">LV Systems</a>
+                            <a class="text-slate-200 hover:text-white transition-colors" href="services.html#field-services">Field Services</a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <p class="text-xs font-extrabold uppercase tracking-[0.2em] text-slate-300">Reach Us</p>
+                        <div class="mt-4 grid gap-3 text-sm font-semibold">
+                            <a class="text-slate-200 hover:text-white transition-colors inline-flex items-center gap-3" href="tel:+258864859969">
+                                <i data-lucide="phone" class="w-4 h-4 text-electric-300"></i>
+                                <span>+258 864 859 969</span>
+                            </a>
+                            <a class="text-slate-200 hover:text-white transition-colors inline-flex items-center gap-3" href="policy.html#hse-policy">
+                                <i data-lucide="shield-check" class="w-4 h-4 text-electric-300"></i>
+                                <span>HSE Policy</span>
+                            </a>
+                            <a class="text-slate-200 hover:text-white transition-colors inline-flex items-center gap-3" href="https://www.linkedin.com/company/lyzon-engineering-and-services-lda/" target="_blank" rel="noopener noreferrer">
+                                <span class="w-4 h-4 flex-shrink-0 inline-flex items-center justify-center overflow-hidden rounded-sm bg-white">
+                                    <img src="pictures/Screenshot 2026-09-30 171041.png" alt="LinkedIn logo" class="w-full h-full object-contain">
+                                </span>
+                                <span>LinkedIn · LYZON Engineering &amp; Services, Lda</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-10 flex justify-end">
+                    <a href="policy.html#hse-policy" class="iso-floating-badge" aria-label="View ISO 45001 certification and policy">
+                        <img src="pictures/iso-45001-certification.png" alt="Certified ISO 45001 with Bureau Veritas and UKAS management systems marks">
+                    </a>
+                </div>
+
+                <div class="mt-8 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-300 font-semibold">
+                    <p>&copy; 2026 LYZON Engineering &amp; Services, Lda. All rights reserved.</p>
+                    <div class="flex items-center gap-6">
+                        <a href="policy.html#hse-policy" class="hover:text-white transition-colors">HSE Policy</a>
+                        <a href="index.html#contact" class="hover:text-white transition-colors">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <button id="backToTopButton" class="back-to-top" type="button" aria-label="Back to top" aria-hidden="true" tabindex="-1">
+        <i data-lucide="arrow-up"></i>
+    </button>
+
+    <script src="js/script.js?v=20260521_3"></script>
+</body>
+</html>

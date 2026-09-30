@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industries | LYZON Engineering & Services, Lda</title>
+    <script>
+        window.tailwind = window.tailwind || {};
+        window.tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            200: '#bbf7d0',
+                            300: '#86efac',
+                            400: '#4ade80',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            800: '#166534',
+                            900: '#14532d',
+                            950: '#052e16'
+                        },
+                        electric: {
+                            50: '#ecfdf5',
+                            100: '#d1fae5',
+                            200: '#a7f3d0',
+                            300: '#6ee7b7',
+                            400: '#34d399',
+                            500: '#10b981'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        soft: '0 12px 24px -16px rgba(2, 6, 23, 0.25)',
+                        lift: '0 18px 40px -20px rgba(2, 6, 23, 0.35)'
+                    }
+                },
+            },
+        }
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="Css/style.css?v=20260930_4">
+</head>
+<body class="text-slate-900 antialiased font-sans is-loading">
+    <div id="pageLoader" aria-label="Loading">
+        <div class="loader-panel">
+            <div class="loader-brand">
+                <img src="pictures/lyzon-logo-transparent.png" alt="Lyzon Engineering Logo" class="logo-img loader-logo">
+            </div>
+            <div class="loader-meter">
+                <div class="loader-progress">
+                    <div class="loader-progress-bar"></div>
+                </div>
+                <div class="loader-meta">
+                    <span class="loader-status">Loading</span>
+                    <span class="loader-dots"><span></span><span></span><span></span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="appShell">
+
+    <nav id="siteNav" class="sticky top-0 z-50 bg-white border-b border-slate-100 transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="h-20 flex items-center justify-between">
+                <a href="index.html#home" class="flex items-center" aria-label="LYZON home">
+                    <span class="logo-shell">
+                        <img src="pictures/lyzon-logo-transparent.png" alt="Lyzon Engineering Logo" class="logo-img h-11 md:h-12 w-auto object-contain">
+                    </span>
+                </a>
+
+                <div class="hidden lg:flex items-center gap-9 text-sm font-semibold">
+                    <a href="index.html#home" class="relative underline-sweep text-slate-600 hover:text-navy-950 transition-colors">Home</a>
+                    <a href="services.html" class="relative underline-sweep text-slate-600 hover:text-navy-950 transition-colors">Services</a>
+                    <a href="industries.html" class="relative underline-sweep text-navy-950">Industries</a>
+                    <a href="projects.html" class="relative underline-sweep text-slate-600 hover:text-navy-950 transition-colors">Projects</a>
+                    <a href="policy.html" class="relative underline-sweep text-slate-600 hover:text-navy-950 transition-colors">Policy</a>
+                    <a href="events.html" class="relative underline-sweep text-slate-600 hover:text-navy-950 transition-colors">Events</a>
+                </div>
+
+                <div class="hidden lg:flex items-center gap-3">
+                    <a href="index.html#contact" class="px-5 py-3 rounded font-extrabold text-navy-950 bg-electric-400 hover:bg-electric-300 transition-colors shadow-soft">Request Quote</a>
+                </div>
+
+                <button id="mobileMenuButton" class="lg:hidden inline-flex items-center justify-center w-11 h-11 rounded border border-slate-200 hover:bg-slate-50 transition-colors" aria-label="Open menu">
+                    <i data-lucide="menu" class="w-6 h-6 text-navy-950"></i>
+                </button>
+            </div>
+
+            <div id="mobileMenu" class="hidden lg:hidden pb-5">
+                <div class="grid gap-2 pt-2">
+                    <a href="index.html#home" class="px-3 py-2 rounded text-sm font-semibold text-slate-700 hover:bg-slate-50">Home</a>
+                    <a href="services.html" class="px-3 py-2 rounded text-sm font-semibold text-slate-700 hover:bg-slate-50">Services</a>
+                    <a href="industries.html" class="px-3 py-2 rounded text-sm font-semibold text-navy-950 hover:bg-slate-50">Industries</a>
+                    <a href="projects.html" class="px-3 py-2 rounded text-sm font-semibold text-slate-700 hover:bg-slate-50">Projects</a>
+                    <a href="policy.html" class="px-3 py-2 rounded text-sm font-semibold text-slate-700 hover:bg-slate-50">Policy</a>
+                    <a href="events.html" class="px-3 py-2 rounded text-sm font-semibold text-slate-700 hover:bg-slate-50">Events</a>
+                    <a href="index.html#contact" class="mt-2 px-4 py-3 rounded font-extrabold text-navy-950 bg-electric-400 hover:bg-electric-300 transition-colors text-center">Request Quote</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="bg-navy-950 text-white">
+            <div class="hero-grid hero-grid--industries">
+                <div class="w-full pl-2 pr-4 sm:pl-4 sm:pr-6 lg:pl-6 lg:pr-8 py-12 lg:py-16 hero-layout">
+                    <div class="hero-content-panel reveal-up">
+                        <p class="hero-kicker inline-flex items-center gap-2 text-electric-300 font-extrabold uppercase tracking-[0.2em] text-xs">
+                            <i data-lucide="factory" class="w-4 h-4"></i>
+                            Industries We Serve
+                        </p>
+                        <h1 class="hero-heading mt-4 text-4xl md:text-6xl font-extrabold tracking-tight leading-[0.95]">
+                            <span class="block hero-heading-brand">Industrial-Grade</span>
+                            <span class="block hero-heading-main">Solutions Across</span>
+                            <span class="block hero-heading-sub">Mozambique</span>
+                        </h1>
+                        <p class="hero-summary mt-5 text-lg md:text-xl text-slate-200 max-w-2xl leading-relaxed">
+                            We support clients across mining, manufacturing, utilities, telecom, and commercial infrastructure with LV/MV systems, panels, control, and field services.
+                        </p>
+                        <div class="hero-divider mt-6" aria-hidden="true"></div>
+                        <div class="hero-actions mt-7 flex flex-wrap gap-4">
+                            <a href="index.html#contact" class="hero-action-primary inline-flex items-center justify-center min-w-[200px] px-7 py-4 rounded-full font-extrabold text-navy-950 bg-electric-400 hover:bg-electric-300 transition-colors shadow-lift">Talk to Our Team</a>
+                            <a href="projects.html" class="hero-action-secondary inline-flex items-center justify-center min-w-[200px] px-7 py-4 rounded-full font-extrabold border border-white/25 hover:border-electric-300 hover:text-electric-200 transition-colors">View Projects</a>
+                        </div>
+                        <div class="mt-8 hero-trust-card reveal-right">
+                            <p class="hero-trust-title text-xs font-bold uppercase tracking-[0.22em] text-electric-200">Field Coverage</p>
+                            <p class="hero-trust-copy mt-3 text-white font-semibold leading-relaxed">Reliable industry support shaped around site conditions, operating risks, and the service demands of critical environments.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 lg:py-20 bg-slate-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-3xl reveal-up">
+                    <p class="text-xs font-extrabold uppercase tracking-[0.2em] text-electric-500">Coverage</p>
+                    <h2 class="mt-3 text-3xl md:text-4xl font-extrabold tracking-tight text-navy-950">Industry Focus Areas</h2>
+                    <p class="mt-4 text-slate-600 text-lg leading-relaxed">
+                        This overview highlights the sectors we support with project planning, supply coordination, installation, testing, and maintenance services.
+                    </p>
+                </div>
+
+                <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="rounded-2xl p-7 shadow-soft card-outline hover:shadow-lift transition-shadow bg-white reveal-up">
+                        <div class="w-12 h-12 rounded-lg bg-navy-50 flex items-center justify-center">
+                            <i data-lucide="mountain-snow" class="w-6 h-6 text-navy-900"></i>
+                        </div>
+                        <h3 class="mt-6 text-xl font-extrabold text-navy-950">Mining & Resources</h3>
+                        <p class="mt-3 text-slate-600 leading-relaxed">LV/MV distribution support, earthing, power quality, and reliable field maintenance for critical operations.</p>
+                    </div>
+                    <div class="rounded-2xl p-7 shadow-soft card-outline hover:shadow-lift transition-shadow bg-white reveal-up">
+                        <div class="w-12 h-12 rounded-lg bg-navy-50 flex items-center justify-center">
+                            <i data-lucide="wrench" class="w-6 h-6 text-navy-900"></i>
+                        </div>
+                        <h3 class="mt-6 text-xl font-extrabold text-navy-950">Manufacturing</h3>
+                        <p class="mt-3 text-slate-600 leading-relaxed">Panel building, MCC wiring, instrumentation integration, and commissioning support for production lines.</p>
+                    </div>
+                    <div class="rounded-2xl p-7 shadow-soft card-outline hover:shadow-lift transition-shadow bg-white reveal-up">
+                        <div class="w-12 h-12 rounded-lg bg-navy-50 flex items-center justify-center">
+                            <i data-lucide="radio-tower" class="w-6 h-6 text-navy-900"></i>
+                        </div>
+                        <h3 class="mt-6 text-xl font-extrabold text-navy-950">Telecom & Sites</h3>
+                        <p class="mt-3 text-slate-600 leading-relaxed">Site power, LV panels, earthing systems, and preventative maintenance for high-availability infrastructure.</p>
+                    </div>
+                    <div class="rounded-2xl p-7 shadow-soft card-outline hover:shadow-lift transition-shadow bg-white reveal-up">
+                        <div class="w-12 h-12 rounded-lg bg-navy-50 flex items-center justify-center">
+                            <i data-lucide="plug-zap" class="w-6 h-6 text-navy-900"></i>
+                        </div>
+                        <h3 class="mt-6 text-xl font-extrabold text-navy-950">Utilities & Energy</h3>
+                        <p class="mt-3 text-slate-600 leading-relaxed">Network support, MV readiness, test & verification, and documentation aligned to compliance and safety.</p>
+                    </div>
+                    <div class="rounded-2xl p-7 shadow-soft card-outline hover:shadow-lift transition-shadow bg-white reveal-up">
+                        <div class="w-12 h-12 rounded-lg bg-navy-50 flex items-center justify-center">
+                            <i data-lucide="building-2" class="w-6 h-6 text-navy-900"></i>
+                        </div>
+                        <h3 class="mt-6 text-xl font-extrabold text-navy-950">Commercial Buildings</h3>
+                        <p class="mt-3 text-slate-600 leading-relaxed">Switchboard upgrades, labeling, testing, and as-built documentation with minimal downtime.</p>
+                    </div>
+                    <div class="rounded-2xl p-7 shadow-soft card-outline hover:shadow-lift transition-shadow bg-white reveal-up">
+                        <div class="w-12 h-12 rounded-lg bg-navy-50 flex items-center justify-center">
+                            <i data-lucide="warehouse" class="w-6 h-6 text-navy-900"></i>
+                        </div>
+                        <h3 class="mt-6 text-xl font-extrabold text-navy-950">Logistics & Warehousing</h3>
+                        <p class="mt-3 text-slate-600 leading-relaxed">Power distribution support for warehouses, lighting systems, and preventative maintenance for uptime.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 lg:py-20 bg-slate-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-5xl reveal-up rounded-[28px] border border-slate-200 bg-white shadow-soft p-8 md:p-10 lg:p-12">
+                        <p class="text-xs font-extrabold uppercase tracking-[0.2em] text-electric-500">Capability Focus</p>
+                        <h2 class="mt-3 text-3xl md:text-4xl font-extrabold tracking-tight text-navy-950">Built Around Site Requirements</h2>
+                        <p class="mt-4 text-slate-600 text-lg leading-relaxed">
+                            We adapt our engineering support to each operating environment, with clear scope definition, disciplined execution, and documentation that supports reliable handover.
+                        </p>
+                        <div class="mt-8 space-y-4 text-sm text-slate-600">
+                            <div class="flex items-start gap-3">
+                                <span class="w-10 h-10 rounded bg-slate-50 border border-slate-200 flex items-center justify-center shadow-soft">
+                                    <i data-lucide="clipboard-list" class="w-5 h-5 text-electric-500"></i>
+                                </span>
+                                <div>
+                                    <p class="font-extrabold text-navy-950">Scope & Deliverables</p>
+                                    <p class="mt-1">Single-line diagrams, as-builts, testing reports, commissioning checklists, and structured handover packs.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <span class="w-10 h-10 rounded bg-slate-50 border border-slate-200 flex items-center justify-center shadow-soft">
+                                    <i data-lucide="hard-hat" class="w-5 h-5 text-electric-500"></i>
+                                </span>
+                                <div>
+                                    <p class="font-extrabold text-navy-950">Safety & Compliance</p>
+                                    <p class="mt-1">HSE-first execution, verification, labeling, and site records aligned with client and statutory requirements.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <span class="w-10 h-10 rounded bg-slate-50 border border-slate-200 flex items-center justify-center shadow-soft">
+                                    <i data-lucide="image" class="w-5 h-5 text-electric-500"></i>
+                                </span>
+                                <div>
+                                    <p class="font-extrabold text-navy-950">Operational Visibility</p>
+                                    <p class="mt-1">Field imagery, equipment views, and site references that help clients understand the working environment.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pt-0 pb-16 lg:pb-20 bg-slate-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="rounded-[28px] border border-slate-200/70 bg-transparent shadow-none p-8 md:p-10 lg:p-12">
+                    <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">
+                        <div class="max-w-3xl reveal-up">
+                            <p class="text-xs font-extrabold uppercase tracking-[0.2em] text-electric-500">Visual Reference</p>
+                            <h2 class="mt-3 text-3xl md:text-4xl font-extrabold tracking-tight text-navy-950">Site & Project Gallery</h2>
+                            <p class="mt-4 text-slate-600 text-lg leading-relaxed">
+                                Real operating environments, industrial facilities, and field conditions that reflect the type of sites we support across Mozambique.
+                            </p>
+                        </div>
+                        <a href="projects.html" class="reveal-up text-sm font-extrabold text-navy-950 hover:text-navy-700 transition-colors inline-flex items-center gap-2">
+                            View Projects
+                            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+
+                    <div class="mt-10 grid grid-cols-12 gap-5">
+                        <div class="group relative col-span-12 sm:col-span-6 xl:col-span-3 rounded-2xl overflow-hidden bg-navy-950 border border-slate-200 shadow-soft hover:shadow-lift transition-shadow reveal-up">
+                            <img src="pictures/WhatsApp Image 2026-05-09 at 10.15.33.jpeg" alt="Industrial operations site photo" class="w-full h-56 sm:h-64 object-contain transition-transform duration-700 ease-out group-hover:scale-105">
+                            <div class="absolute inset-0 bg-gradient-to-t from-navy-950/55 via-transparent to-transparent"></div>
+                            <div class="absolute bottom-4 left-4 right-4">
+                                <div class="inline-flex items-center gap-2 rounded-full bg-white/90 backdrop-blur px-3 py-1 text-xs font-extrabold tracking-widest text-navy-950 border border-white/60">
+                                    <span class="w-2 h-2 rounded-full bg-electric-400"></span>
+                                    INDUSTRIAL
+                                </div>
+                            </div>
+                        </div>
+                        <div class="group relative col-span-12 sm:col-span-6 xl:col-span-3 rounded-2xl overflow-hidden bg-navy-950 border border-slate-200 shadow-soft hover:shadow-lift transition-shadow reveal-up">
+                            <img src="pictures/WhatsApp Image 2026-05-09 at 10.15.41.jpeg" alt="Industrial plant and structures" class="w-full h-56 sm:h-64 object-contain transition-transform duration-700 ease-out group-hover:scale-105">
+                            <div class="absolute inset-0 bg-gradient-to-t from-navy-950/55 via-transparent to-transparent"></div>
+                            <div class="absolute bottom-4 left-4 right-4">
+                                <div class="inline-flex items-center gap-2 rounded-full bg-white/90 backdrop-blur px-3 py-1 text-xs font-extrabold tracking-widest text-navy-950 border border-white/60">
+                                    <span class="w-2 h-2 rounded-full bg-electric-400"></span>
+                                    PLANT
+                                </div>
+                            </div>
+                        </div>
+                        <div class="group relative col-span-12 sm:col-span-6 xl:col-span-3 rounded-2xl overflow-hidden bg-navy-950 border border-slate-200 shadow-soft hover:shadow-lift transition-shadow reveal-up">
+                            <img src="pictures/WhatsApp Image 2026-05-09 at 10.37.35.jpeg" alt="Lyzon fleet and logistics support" class="w-full h-56 sm:h-64 object-contain transition-transform duration-700 ease-out group-hover:scale-105">
+                            <div class="absolute inset-0 bg-gradient-to-t from-navy-950/55 via-transparent to-transparent"></div>
+                            <div class="absolute bottom-4 left-4 right-4">
+                                <div class="inline-flex items-center gap-2 rounded-full bg-white/90 backdrop-blur px-3 py-1 text-xs font-extrabold tracking-widest text-navy-950 border border-white/60">
+                                    <span class="w-2 h-2 rounded-full bg-electric-400"></span>
+                                    LOGISTICS
+                                </div>
+                            </div>
+                        </div>
+                        <div class="group relative col-span-12 sm:col-span-6 xl:col-span-3 rounded-2xl overflow-hidden bg-navy-950 border border-slate-200 shadow-soft hover:shadow-lift transition-shadow reveal-up">
+                            <img src="pictures/WhatsApp Image 2026-05-09 at 10.15.13.jpeg" alt="Industrial mining operations" class="w-full h-56 sm:h-64 object-contain transition-transform duration-700 ease-out group-hover:scale-105">
+                            <div class="absolute inset-0 bg-gradient-to-t from-navy-950/55 via-transparent to-transparent"></div>
+                            <div class="absolute bottom-4 left-4 right-4">
+                                <div class="inline-flex items-center gap-2 rounded-full bg-white/90 backdrop-blur px-3 py-1 text-xs font-extrabold tracking-widest text-navy-950 border border-white/60">
+                                    <span class="w-2 h-2 rounded-full bg-electric-400"></span>
+                                    MINING
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pb-16 lg:pb-20 bg-slate-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="rounded-[28px] border border-slate-200 bg-white shadow-soft p-8 md:p-10 lg:p-12">
+                    <div class="max-w-3xl reveal-up">
+                        <p class="text-xs font-extrabold uppercase tracking-[0.2em] text-electric-500">Representation Focus</p>
+                        <h2 class="mt-3 text-3xl md:text-4xl font-extrabold tracking-tight text-navy-950">Brand & Execution Support</h2>
+                        <p class="mt-4 text-slate-600 text-lg leading-relaxed">
+                            A clean presentation area for represented brands, specialist supply relationships, and project support capability, with space reserved for each logo or product image.
+                        </p>
+                    </div>
+
+                    <div class="mt-10 industry-brand-list">
+                        <article class="industry-brand-row reveal-up">
+                            <div class="industry-brand-media">
+                                <img src="pictures/Screenshot 2026-07-12 121855.png" alt="Himoinsa logo" class="max-w-full max-h-24 object-contain">
+                                <p class="mt-3 text-xs font-semibold text-slate-500">Himoinsa</p>
+                            </div>
+                            <div class="industry-brand-copy">
+                                <p><strong>HIMOINSA</strong> - Project execution, corrective and preventive maintenance, supply of equipment accessories, and official exclusive representation support in Mozambique.</p>
+                            </div>
+                        </article>
+
+                        <article class="industry-brand-row reveal-up">
+                            <div class="industry-brand-media">
+                                <img src="pictures/Screenshot 2026-07-12 121919.png" alt="Vexila logo" class="max-w-full max-h-24 object-contain">
+                                <p class="mt-3 text-xs font-semibold text-slate-500">Vexila</p>
+                            </div>
+                            <div class="industry-brand-copy">
+                                <p><strong>VEXILA</strong> - Supply of material and exclusive representative support in Mozambique.</p>
+                            </div>
+                        </article>
+
+                        <article class="industry-brand-row reveal-up">
+                            <div class="industry-brand-media">
+                                <img src="pictures/Screenshot 2026-07-12 121950.png" alt="EcoXpert logo" class="max-w-full max-h-24 object-contain">
+                                <p class="mt-3 text-xs font-semibold text-slate-500">EcoXpert</p>
+                            </div>
+                            <div class="industry-brand-copy">
+                                <p><strong>SCHNEIDER ECOXPERTS</strong> - Project execution, corrective and preventive maintenance, and exclusive representative support in Mozambique.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 lg:py-20 bg-slate-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="rounded-2xl bg-navy-950 text-white overflow-hidden">
+                    <div class="hero-grid">
+                        <div class="p-10 md:p-14 grid lg:grid-cols-12 gap-10 items-center">
+                            <div class="lg:col-span-8 reveal-up">
+                                <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight">Need a solution for your industry?</h2>
+                                <p class="mt-4 text-slate-200 text-lg leading-relaxed">
+                                    Share your site type, load requirements, and timeline. We’ll propose a safe, compliant plan for execution.
+                                </p>
+                            </div>
+                            <div class="lg:col-span-4 flex lg:justify-end reveal-up">
+                                <a href="index.html#contact" class="w-full lg:w-auto px-7 py-4 rounded font-extrabold text-navy-950 bg-electric-400 hover:bg-electric-300 transition-colors shadow-lift text-center">Request Quote</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-navy-950 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+            <div class="grid md:grid-cols-4 gap-10">
+                <div>
+                    <div class="flex items-center">
+                        <span class="logo-shell-footer">
+                            <img src="pictures/lyzon-logo-transparent.png" alt="Lyzon Engineering Logo" class="logo-img h-10 w-auto object-contain">
+                        </span>
+                    </div>
+                    <p class="mt-5 text-sm text-slate-200 leading-relaxed">
+                        LYZON Engineering & Services, Lda. Industrial electrical materials and engineering support since 2009.
+                    </p>
+                </div>
+
+                <div>
+                    <p class="text-xs font-extrabold uppercase tracking-[0.2em] text-slate-300">Company</p>
+                    <div class="mt-4 grid gap-3 text-sm font-semibold">
+                        <a class="text-slate-200 hover:text-white transition-colors" href="events.html">Events</a>
+                        <a class="text-slate-200 hover:text-white transition-colors" href="industries.html">Industries</a>
+                        <a class="text-slate-200 hover:text-white transition-colors" href="projects.html">Projects</a>
+                        <a class="text-slate-200 hover:text-white transition-colors" href="policy.html">Policy</a>
+                        <a class="text-slate-200 hover:text-white transition-colors" href="index.html#contact">Contact</a>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="text-xs font-extrabold uppercase tracking-[0.2em] text-slate-300">Services</p>
+                    <div class="mt-4 grid gap-3 text-sm font-semibold">
+                        <a class="text-slate-200 hover:text-white transition-colors" href="services.html#service-catalog">Electrical Design</a>
+                        <a class="text-slate-200 hover:text-white transition-colors" href="services.html#service-catalog">LV Systems</a>
+                        <a class="text-slate-200 hover:text-white transition-colors" href="services.html#service-catalog">MV Infrastructure</a>
+                    </div>
+                </div>
+
+                    <div>
+                        <p class="text-xs font-extrabold uppercase tracking-[0.2em] text-slate-300">Reach Us</p>
+                        <div class="mt-4 grid gap-3 text-sm font-semibold">
+                            <a class="text-slate-200 hover:text-white transition-colors inline-flex items-center gap-3" href="tel:+258864859969">
+                                <i data-lucide="phone" class="w-4 h-4 text-electric-300"></i>
+                                <span>+258 864 859 969</span>
+                            </a>
+                            <a class="text-slate-200 hover:text-white transition-colors inline-flex items-center gap-3" href="policy.html#hse-policy">
+                                <i data-lucide="shield-check" class="w-4 h-4 text-electric-300"></i>
+                                <span>HSE Policy</span>
+                            </a>
+                            <a class="text-slate-200 hover:text-white transition-colors inline-flex items-center gap-3" href="https://www.linkedin.com/company/lyzon-engineering-and-services-lda/" target="_blank" rel="noopener noreferrer">
+                                <span class="w-4 h-4 flex-shrink-0 inline-flex items-center justify-center overflow-hidden rounded-sm bg-white">
+                                    <img src="pictures/Screenshot 2026-09-30 171041.png" alt="LinkedIn logo" class="w-full h-full object-contain">
+                                </span>
+                                <span>LinkedIn · LYZON Engineering &amp; Services, Lda</span>
+                            </a>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="mt-10 flex justify-end">
+                <a href="policy.html#hse-policy" class="iso-floating-badge" aria-label="View ISO 45001 certification and policy">
+                    <img src="pictures/iso-45001-certification.png" alt="Certified ISO 45001 with Bureau Veritas and UKAS management systems marks">
+                </a>
+            </div>
+
+            <div class="mt-8 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-300 font-semibold">
+                <p>&copy; 2026 LYZON Engineering & Services, Lda. All rights reserved.</p>
+                <div class="flex items-center gap-6">
+                        <a href="policy.html#hse-policy" class="hover:text-white transition-colors">HSE Policy</a>
+                        <a href="index.html#contact" class="hover:text-white transition-colors">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <button id="backToTopButton" class="back-to-top" type="button" aria-label="Back to top" aria-hidden="true" tabindex="-1">
+        <i data-lucide="arrow-up"></i>
+    </button>
+    <script src="js/script.js?v=20260521_3"></script>
+</body>
+</html>
+</html>
+</html>

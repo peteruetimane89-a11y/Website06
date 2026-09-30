@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | LYZON Engineering & Services, Lda</title>
+    <script>
+        window.tailwind = window.tailwind || {};
+        window.tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            200: '#bbf7d0',
+                            300: '#86efac',
+                            400: '#4ade80',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            800: '#166534',
+                            900: '#14532d',
+                            950: '#052e16'
+                        },
+                        electric: {
+                            50: '#ecfdf5',
+                            100: '#d1fae5',
+                            200: '#a7f3d0',
+                            300: '#6ee7b7',
+                            400: '#34d399',
+                            500: '#10b981'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        soft: '0 12px 24px -16px rgba(2, 6, 23, 0.25)',
+                        lift: '0 18px 40px -20px rgba(2, 6, 23, 0.35)'
+                    }
+                },
+            },
+        }
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="Css/style.css?v=20260930_4">
+</head>
+<body class="text-slate-900 antialiased font-sans is-loading">
+    <div id="pageLoader" aria-label="Loading">
+        <div class="loader-panel">
+            <div class="loader-brand">
+                <img src="pictures/lyzon-logo-transparent.png" alt="Lyzon Engineering Logo" class="logo-img loader-logo">
+            </div>
+            <div class="loader-meter">
+                <div class="loader-progress">
+                    <div class="loader-progress-bar"></div>
+                </div>
+                <div class="loader-meta">
+                    <span class="loader-status">Loading</span>
+                    <span class="loader-dots"><span></span><span></span><span></span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="appShell">
+        <nav id="siteNav" class="sticky top-0 z-50 bg-white border-b border-slate-100 transition-all">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="h-20 flex items-center justify-between">
+                    <a href="index.html#home" class="flex items-center" aria-label="LYZON home">
+                        <span class="logo-shell">
+                            <img src="pictures/lyzon-logo-transparent.png" alt="Lyzon Engineering Logo" class="logo-img h-11 md:h-12 w-auto object-contain">
+                        </span>
+                    </a>
+
+                    <div class="hidden lg:flex items-center gap-9 text-sm font-semibold">
+                        <a href="index.html#home" class="relative underline-sweep text-slate-600 hover:text-navy-950 transition-colors">Home</a>
+                        <a href="services.html" class="relative underline-sweep text-navy-950">Services</a>
+                        <a href="industries.html" class="relative underline-sweep text-slate-600 hover:text-navy-950 transition-colors">Industries</a>
+                        <a href="projects.html" class="relative underline-sweep text-slate-600 hover:text-navy-950 transition-colors">Projects</a>
+                        <a href="policy.html" class="relative underline-sweep text-slate-600 hover:text-navy-950 transition-colors">Policy</a>
+                        <a href="events.html" class="relative underline-sweep text-slate-600 hover:text-navy-950 transition-colors">Events</a>
+                    </div>
+
+                    <div class="hidden lg:flex items-center gap-3">
+                        <a href="index.html#contact" class="px-5 py-3 rounded font-extrabold text-navy-950 bg-electric-400 hover:bg-electric-300 transition-colors shadow-soft">Request Quote</a>
+                    </div>
+
+                    <button id="mobileMenuButton" class="lg:hidden inline-flex items-center justify-center w-11 h-11 rounded border border-slate-200 hover:bg-slate-50 transition-colors" aria-label="Open menu">
+                        <i data-lucide="menu" class="w-6 h-6 text-navy-950"></i>
+                    </button>
+                </div>
+
+                <div id="mobileMenu" class="hidden lg:hidden pb-5">
+                    <div class="grid gap-2 pt-2">
+                        <a href="index.html#home" class="px-3 py-2 rounded text-sm font-semibold text-slate-700 hover:bg-slate-50">Home</a>
+                        <a href="services.html" class="px-3 py-2 rounded text-sm font-semibold text-navy-950 hover:bg-slate-50">Services</a>
+                        <a href="industries.html" class="px-3 py-2 rounded text-sm font-semibold text-slate-700 hover:bg-slate-50">Industries</a>
+                        <a href="projects.html" class="px-3 py-2 rounded text-sm font-semibold text-slate-700 hover:bg-slate-50">Projects</a>
+                        <a href="policy.html" class="px-3 py-2 rounded text-sm font-semibold text-slate-700 hover:bg-slate-50">Policy</a>
+                        <a href="events.html" class="px-3 py-2 rounded text-sm font-semibold text-slate-700 hover:bg-slate-50">Events</a>
+                        <a href="index.html#contact" class="mt-2 px-4 py-3 rounded font-extrabold text-navy-950 bg-electric-400 hover:bg-electric-300 transition-colors text-center">Request Quote</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <section class="bg-navy-950 text-white">
+                <div class="hero-grid hero-grid--services">
+                    <div class="w-full pl-2 pr-4 sm:pl-4 sm:pr-6 lg:pl-6 lg:pr-8 py-12 lg:py-16 hero-layout">
+                        <div class="hero-content-panel reveal-up">
+                            <p class="hero-kicker inline-flex items-center gap-2 text-electric-300 font-extrabold uppercase tracking-[0.2em] text-xs">
+                                <i data-lucide="briefcase" class="w-4 h-4"></i>
+                                Services
+                            </p>
+                            <h1 class="hero-heading mt-4 text-4xl md:text-6xl font-extrabold tracking-tight leading-[0.95]">
+                                <span class="block hero-heading-brand">Electrical Services</span>
+                                <span class="block hero-heading-main">Built for Real</span>
+                                <span class="block hero-heading-sub">Field Delivery</span>
+                            </h1>
+                            <p class="hero-summary mt-5 text-lg md:text-xl text-slate-200 max-w-2xl leading-relaxed">
+                                From design and procurement to maintenance teams on site, we organize our work around practical delivery, safety, and reliable electrical performance across Mozambique.
+                            </p>
+                            <div class="hero-divider mt-6" aria-hidden="true"></div>
+                            <div class="hero-actions mt-7 flex flex-wrap gap-4">
+                                <a href="#service-catalog" class="hero-action-primary inline-flex items-center justify-center min-w-[200px] px-7 py-4 rounded-full font-extrabold text-navy-950 bg-electric-400 hover:bg-electric-300 transition-colors shadow-lift">Explore Service Scope</a>
+                                <a href="#field-services" class="hero-action-secondary inline-flex items-center justify-center min-w-[200px] px-7 py-4 rounded-full font-extrabold border border-white/25 hover:border-electric-300 hover:text-electric-200 transition-colors">Team on the Field</a>
+                            </div>
+                            <div class="mt-8 hero-trust-card reveal-right">
+                                <p class="hero-trust-title text-xs font-bold uppercase tracking-[0.22em] text-electric-200">Field Delivery</p>
+                                <p class="hero-trust-copy mt-3 text-white font-semibold leading-relaxed">Maintenance teams, installation crews, and commissioning support organized around safe execution and visible results.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="service-catalog" class="py-20 lg:py-24 bg-navy-950 text-white">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="max-w-3xl reveal-up">
+                        <p class="text-xs font-extrabold uppercase tracking-[0.2em] text-electric-300">Service Catalog</p>
+                        <h2 class="mt-3 text-3xl md:text-4xl font-extrabold tracking-tight text-white">End-to-end electrical support</h2>
+                        <p class="mt-4 text-slate-200 text-lg leading-relaxed">
+                            We support engineering, installation, commissioning, and maintenance with the same focus on organization, safety, and dependable site execution.
+                        </p>
+                    </div>
+
+                    <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="rounded-2xl p-7 shadow-soft card-outline hover:shadow-lift transition-shadow bg-white reveal-up">
+                            <div class="w-12 h-12 rounded-lg bg-navy-50 flex items-center justify-center">
+                                <i data-lucide="circuit-board" class="w-6 h-6 text-navy-900"></i>
+                            </div>
+                            <h3 class="mt-6 text-xl font-extrabold text-navy-950">Electrical Design & Studies</h3>
+                            <p class="mt-3 text-slate-600 leading-relaxed">Load studies, single-line diagrams, protection coordination, and compliance-ready documentation.</p>
+                            <ul class="mt-5 space-y-2 text-sm text-slate-600">
+                                <li class="flex items-start gap-2"><span class="mt-2 w-1.5 h-1.5 rounded-full bg-electric-400"></span>SLD, schematics, as-builts</li>
+                                <li class="flex items-start gap-2"><span class="mt-2 w-1.5 h-1.5 rounded-full bg-electric-400"></span>Protection & selectivity</li>
+                            </ul>
+                        </div>
+
+                        <div class="rounded-2xl p-7 shadow-soft card-outline hover:shadow-lift transition-shadow bg-white reveal-up">
+                            <div class="w-12 h-12 rounded-lg bg-navy-50 flex items-center justify-center">
+                                <i data-lucide="plug" class="w-6 h-6 text-navy-900"></i>
+                            </div>
+                            <h3 class="mt-6 text-xl font-extrabold text-navy-950">LV Systems & Panels</h3>
+                            <p class="mt-3 text-slate-600 leading-relaxed">Switchboards, MCCs, DBs, cabling, labeling, terminations, testing, and structured handover.</p>
+                            <ul class="mt-5 space-y-2 text-sm text-slate-600">
+                                <li class="flex items-start gap-2"><span class="mt-2 w-1.5 h-1.5 rounded-full bg-electric-400"></span>Panel assembly & installation</li>
+                                <li class="flex items-start gap-2"><span class="mt-2 w-1.5 h-1.5 rounded-full bg-electric-400"></span>Testing & documentation</li>
+                            </ul>
+                        </div>
+
+                        <div class="rounded-2xl p-7 shadow-soft card-outline hover:shadow-lift transition-shadow bg-white reveal-up">
+                            <div class="w-12 h-12 rounded-lg bg-navy-50 flex items-center justify-center">
+                                <i data-lucide="tower-control" class="w-6 h-6 text-navy-900"></i>
+                            </div>
+                            <h3 class="mt-6 text-xl font-extrabold text-navy-950">MV Infrastructure</h3>
+                            <p class="mt-3 text-slate-600 leading-relaxed">Transformer interfaces, switchgear support, earthing, and industrial site commissioning.</p>
+                            <ul class="mt-5 space-y-2 text-sm text-slate-600">
+                                <li class="flex items-start gap-2"><span class="mt-2 w-1.5 h-1.5 rounded-full bg-electric-400"></span>Earthing & bonding</li>
+                                <li class="flex items-start gap-2"><span class="mt-2 w-1.5 h-1.5 rounded-full bg-electric-400"></span>Commissioning support</li>
+                            </ul>
+                        </div>
+
+                        <div class="rounded-2xl p-7 shadow-soft card-outline hover:shadow-lift transition-shadow bg-white reveal-up">
+                            <div class="w-12 h-12 rounded-lg bg-navy-50 flex items-center justify-center">
+                                <i data-lucide="settings" class="w-6 h-6 text-navy-900"></i>
+                            </div>
+                            <h3 class="mt-6 text-xl font-extrabold text-navy-950">Automation & Control</h3>
+                            <p class="mt-3 text-slate-600 leading-relaxed">Control wiring, instrumentation integration, and commissioning support for industrial operations.</p>
+                            <ul class="mt-5 space-y-2 text-sm text-slate-600">
+                                <li class="flex items-start gap-2"><span class="mt-2 w-1.5 h-1.5 rounded-full bg-electric-400"></span>Control panels & wiring</li>
+                                <li class="flex items-start gap-2"><span class="mt-2 w-1.5 h-1.5 rounded-full bg-electric-400"></span>Instrumentation integration</li>
+                            </ul>
+                        </div>
+
+                        <div class="rounded-2xl p-7 shadow-soft card-outline hover:shadow-lift transition-shadow bg-white reveal-up">
+                            <div class="w-12 h-12 rounded-lg bg-navy-50 flex items-center justify-center">
+                                <i data-lucide="shield-check" class="w-6 h-6 text-navy-900"></i>
+                            </div>
+                            <h3 class="mt-6 text-xl font-extrabold text-navy-950">Safety & Compliance</h3>
+                            <p class="mt-3 text-slate-600 leading-relaxed">Structured procedures, inspection-ready records, permits, and HSE-aligned site delivery.</p>
+                            <ul class="mt-5 space-y-2 text-sm text-slate-600">
+                                <li class="flex items-start gap-2"><span class="mt-2 w-1.5 h-1.5 rounded-full bg-electric-400"></span>Inspections & checklists</li>
+                                <li class="flex items-start gap-2"><span class="mt-2 w-1.5 h-1.5 rounded-full bg-electric-400"></span>Risk & method statements</li>
+                            </ul>
+                        </div>
+
+                        <div class="rounded-2xl p-7 shadow-soft card-outline hover:shadow-lift transition-shadow bg-white reveal-up">
+                            <div class="w-12 h-12 rounded-lg bg-navy-50 flex items-center justify-center">
+                                <i data-lucide="wrench" class="w-6 h-6 text-navy-900"></i>
+                            </div>
+                            <h3 class="mt-6 text-xl font-extrabold text-navy-950">Maintenance & Support</h3>
+                            <p class="mt-3 text-slate-600 leading-relaxed">Preventive maintenance, corrective response, restoration support, and ongoing operational care.</p>
+                            <ul class="mt-5 space-y-2 text-sm text-slate-600">
+                                <li class="flex items-start gap-2"><span class="mt-2 w-1.5 h-1.5 rounded-full bg-electric-400"></span>Preventive maintenance</li>
+                                <li class="flex items-start gap-2"><span class="mt-2 w-1.5 h-1.5 rounded-full bg-electric-400"></span>Fault finding & restoration</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="field-services" class="py-16 lg:py-20 bg-slate-50">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="max-w-3xl reveal-up">
+                        <p class="text-xs font-extrabold uppercase tracking-[0.2em] text-electric-500">Team on the Field</p>
+                        <h2 class="mt-3 text-3xl md:text-4xl font-extrabold tracking-tight text-navy-950">Visible service execution on client sites</h2>
+                        <p class="mt-4 text-slate-600 text-lg leading-relaxed">
+                            These examples show how our teams support maintenance contracts, installations, and industrial service work in active operating environments.
+                        </p>
+                    </div>
+
+                    <div class="mt-12 field-team-list">
+                        <div class="field-team-card reveal-up">
+                            <div class="field-team-header">
+                                <div class="field-team-title">
+                                    <div class="field-team-kicker">Team on<br>the Field</div>
+                                    <span class="field-team-divider" aria-hidden="true"></span>
+                                </div>
+                                <img src="pictures/Screenshot 2026-07-11 232256.png" alt="TRAC logo" class="field-team-logo">
+                            </div>
+                            <div class="field-team-body">
+                                <h3 class="field-team-heading">Ongoing maintenance of public lighting and traffic lights on the N4</h3>
+                                <div class="field-team-copy">
+                                    <p class="field-team-band">Area 1 - Traffic Light Maintenance</p>
+                                    <ol class="mt-4 list-decimal pl-5">
+                                        <li>Replacing fused or damaged lights.</li>
+                                        <li>Installation of new traffic light posts.</li>
+                                        <li>Replacement of short-circuited or damaged wiring.</li>
+                                        <li>Identify circuit costs in cables, switches and control computers and replace them.</li>
+                                        <li>Install new traffic light control computers.</li>
+                                        <li>Assemble new posts or replace damaged posts, on concrete bases, etc.</li>
+                                    </ol>
+                                    <p class="field-team-band">Area 2 - Public Lighting</p>
+                                    <ol class="mt-4 list-decimal pl-5">
+                                        <li>Replacement of Lamps Or Led Luminaires, On 10m Useful Fiber Or Galvanized Metal Posts.</li>
+                                        <li>Change Lamps In Lighting Towers, In The Form Of Scissors Or Static Ones With A Height Of Up To 25m.</li>
+                                        <li>Replace Fiber Or Metal Posts Damaged In Accidents, Including Lamps, Cables.</li>
+                                        <li>Replace Contactors, Fuses, Photo Cells, Cables, In Low Voltage Switchboards.</li>
+                                        <li>Maintenance Of MV Transformers, Replacing Medium Voltage Components, Lightning, Service And Protective Earths, Connectors, Insulators, Drop Outs and Surge Arrestors.</li>
+                                        <li>Replacement Of Damaged Cables.</li>
+                                    </ol>
+                                </div>
+                                <div class="field-team-image-grid two-up max-w-3xl">
+                                    <div class="field-team-image-slot field-team-photo">
+                                        <img src="pictures/WhatsApp Image 2026-07-12 at 13.03.30.jpeg" alt="TRAC power line structure field photo" class="w-full aspect-square rounded-[18px] object-cover">
+                                        <div class="field-team-photo-caption">
+                                            <span class="field-team-photo-label">TRAC</span>
+                                            <span class="field-team-photo-note">Line structure</span>
+                                        </div>
+                                    </div>
+                                    <div class="field-team-image-slot field-team-photo">
+                                        <img src="pictures/WhatsApp Image 2026-07-12 at 13.03.42.jpeg" alt="TRAC technicians working on power line structure" class="w-full aspect-square rounded-[18px] object-cover">
+                                        <div class="field-team-photo-caption">
+                                            <span class="field-team-photo-label">TRAC</span>
+                                            <span class="field-team-photo-note">Technician work</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="field-team-card reveal-up">
+                            <div class="field-team-header">
+                                <div class="field-team-title">
+                                    <div class="field-team-kicker">Team on<br>the Field</div>
+                                    <span class="field-team-divider" aria-hidden="true"></span>
+                                </div>
+                                <img src="pictures/Screenshot 2026-07-11 232207.png" alt="Sasol logo" class="field-team-logo">
+                            </div>
+                            <div class="field-team-body">
+                                <h3 class="field-team-heading">Ongoing service &amp; maintenance of all air conditioners of Matola facilities &amp; Sasol Petrol Temane Plant</h3>
+                                <div class="field-team-copy">
+                                    <p>Service includes but not limited to maintenance, repair, overhaul and installation of air conditioning HVAC units, refrigeration units, water chillers, cold rooms/containers, extractors in blocks, administration blocks, clinic, recreation rooms, canteen, gym, laundry, stores, electrical substations, central control room building, laboratories and all other areas.</p>
+                                    <ul class="mt-4">
+                                        <li>Monthly inspections of all air conditioners;</li>
+                                        <li>Clean dust;</li>
+                                        <li>Clean filters;</li>
+                                        <li>Replacement and installation of faulty units.</li>
+                                    </ul>
+                                </div>
+                                <div class="field-team-image-grid two-up">
+                                    <div class="field-team-image-slot field-team-photo">
+                                        <img src="pictures/WhatsApp Image 2026-07-12 at 20.20.50.jpeg" alt="SASOL HVAC maintenance unit installation" class="w-full aspect-square rounded-[18px] object-cover">
+                                        <div class="field-team-photo-caption">
+                                            <span class="field-team-photo-label">SASOL</span>
+                                            <span class="field-team-photo-note">HVAC platform unit</span>
+                                        </div>
+                                    </div>
+                                    <div class="field-team-image-slot field-team-photo">
+                                        <img src="pictures/WhatsApp Image 2026-07-12 at 20.20.52.jpeg" alt="SASOL technician servicing wall-mounted air conditioner" class="w-full aspect-square rounded-[18px] object-cover">
+                                        <div class="field-team-photo-caption">
+                                            <span class="field-team-photo-label">SASOL</span>
+                                            <span class="field-team-photo-note">AC servicing work</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="field-team-card reveal-up">
+                            <div class="field-team-header">
+                                <div class="field-team-title">
+                                    <div class="field-team-kicker">Team on<br>the Field</div>
+                                    <span class="field-team-divider" aria-hidden="true"></span>
+                                </div>
+                                <img src="pictures/Screenshot 2026-07-11 232152.png" alt="Vodacom logo" class="field-team-logo">
+                            </div>
+                            <div class="field-team-body">
+                                <h3 class="field-team-heading">Ongoing service contract to MV and LV power to sites installation, preventive and corrective maintenance in Mozambique South Region</h3>
+                                <div class="field-team-copy">
+                                    <p>Installation and commissioning of New Transformer Points a long the country - Mozambique.</p>
+                                </div>
+                                <div class="field-team-image-grid two-up max-w-3xl">
+                                    <div class="field-team-image-slot field-team-photo">
+                                        <img src="pictures/WhatsApp Image 2026-07-12 at 13.33.12.jpeg" alt="Vodacom telecom equipment cabinet" class="w-full aspect-square rounded-[18px] object-cover">
+                                        <div class="field-team-photo-caption">
+                                            <span class="field-team-photo-label">Vodacom</span>
+                                            <span class="field-team-photo-note">Cabinet install</span>
+                                        </div>
+                                    </div>
+                                    <div class="field-team-image-slot field-team-photo">
+                                        <img src="pictures/WhatsApp Image 2026-07-12 at 13.33.53.jpeg" alt="Vodacom tower and power installation" class="w-full aspect-square rounded-[18px] object-cover">
+                                        <div class="field-team-photo-caption">
+                                            <span class="field-team-photo-label">Vodacom</span>
+                                            <span class="field-team-photo-note">Tower power point</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="field-team-card reveal-up">
+                            <div class="field-team-header">
+                                <div class="field-team-title">
+                                    <div class="field-team-kicker">Team on<br>the Field</div>
+                                    <span class="field-team-divider" aria-hidden="true"></span>
+                                </div>
+                                <img src="pictures/Screenshot 2026-07-11 232225.png" alt="Kenmare logo" class="field-team-logo max-w-[320px] max-h-[136px]">
+                            </div>
+                            <div class="field-team-body">
+                                <h3 class="field-team-heading">Ongoing industrial electrical, instrumentation and boiler making service maintenance in the water concentrator plants, engineering buildings &amp; MSP.</h3>
+                                <div class="field-team-copy">
+                                    <ul>
+                                        <li>Installation of Electrical SKID Complete;</li>
+                                        <li>Electrical Cables Terminations 11kV &amp; 22kV;</li>
+                                        <li>Upgrade on MSP 1.2 MT Project, Electrical, Mechanical &amp; Instrumentation (VSD &amp; Electrical Motors);</li>
+                                        <li>Installation WCPA Instrumentation Upgrade Concentrator Plant;</li>
+                                        <li>Cable Racks Installation and Mounting - Boiler Making Hot Works;</li>
+                                        <li>Fiber connection and installation Services;</li>
+                                        <li>Electrical installation and instrumentation of the SMO Project;</li>
+                                        <li>Installation WCPA of collapsed cable rack on concentrator plant;</li>
+                                        <li>Installation MSP electrical M Instrumentation Re-heater;</li>
+                                        <li>Installation MSP HT-Cable at HTROOM-3.</li>
+                                        <li>Installation HT-AL aero coveyer CD5051, 5050, 5054 &amp; 5055 ICE</li>
+                                    </ul>
+                                </div>
+                                <div class="field-team-image-grid three-up">
+                                    <div class="field-team-image-slot field-team-photo">
+                                        <img src="pictures/WhatsApp Image 2026-07-12 at 19.39.28.jpeg" alt="Kenmare skid installation and site equipment" class="w-full aspect-square rounded-[18px] object-cover">
+                                        <div class="field-team-photo-caption">
+                                            <span class="field-team-photo-label">Kenmare</span>
+                                            <span class="field-team-photo-note">Skid installation</span>
+                                        </div>
+                                    </div>
+                                    <div class="field-team-image-slot field-team-photo">
+                                        <img src="pictures/WhatsApp Image 2026-07-12 at 19.39.24.jpeg" alt="Kenmare cable terminations and concentrator plant structure" class="w-full aspect-square rounded-[18px] object-cover object-center">
+                                        <div class="field-team-photo-caption">
+                                            <span class="field-team-photo-label">Kenmare</span>
+                                            <span class="field-team-photo-note">Plant connection work</span>
+                                        </div>
+                                    </div>
+                                    <div class="field-team-image-slot field-team-photo">
+                                        <img src="pictures/WhatsApp Image 2026-07-12 at 19.39.21.jpeg" alt="Kenmare cable rack installation detail with technician" class="w-full aspect-square rounded-[18px] object-cover">
+                                        <div class="field-team-photo-caption">
+                                            <span class="field-team-photo-label">Kenmare</span>
+                                            <span class="field-team-photo-note">Cable rack detail</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="service-support" class="py-16 lg:py-20 bg-white">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="rounded-2xl bg-navy-950 text-white p-8 md:p-10 shadow-lift">
+                        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+                            <div class="max-w-3xl">
+                                <p class="text-xs font-extrabold uppercase tracking-[0.2em] text-electric-300">Need support?</p>
+                                <h2 class="mt-3 text-3xl md:text-4xl font-extrabold tracking-tight">Tell us what your site needs</h2>
+                                <p class="mt-4 text-slate-200 text-lg leading-relaxed">Share your scope, timeline, and service requirements and we will prepare a practical support approach for your site.</p>
+                            </div>
+                            <a href="index.html#contact" class="inline-flex items-center justify-center px-7 py-4 rounded-xl font-extrabold text-navy-950 bg-electric-400 hover:bg-electric-300 transition-colors shadow-soft">
+                                Request Quote
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-navy-950 border-t border-white/10">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+                <div class="grid md:grid-cols-4 gap-10">
+                    <div>
+                        <div class="flex items-center">
+                            <span class="logo-shell-footer">
+                                <img src="pictures/lyzon-logo-transparent.png" alt="Lyzon Engineering Logo" class="logo-img h-10 w-auto object-contain">
+                            </span>
+                        </div>
+                        <p class="mt-5 text-sm text-slate-200 leading-relaxed">
+                            LYZON Engineering & Services, Lda. Industrial electrical materials and engineering support since 2009.
+                        </p>
+                    </div>
+
+                    <div>
+                        <p class="text-xs font-extrabold uppercase tracking-[0.2em] text-slate-300">Company</p>
+                        <div class="mt-4 grid gap-3 text-sm font-semibold">
+                            <a class="text-slate-200 hover:text-white transition-colors" href="events.html">Events</a>
+                            <a class="text-slate-200 hover:text-white transition-colors" href="projects.html">Projects</a>
+                            <a class="text-slate-200 hover:text-white transition-colors" href="policy.html">Policy</a>
+                            <a class="text-slate-200 hover:text-white transition-colors" href="index.html#contact">Contact</a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <p class="text-xs font-extrabold uppercase tracking-[0.2em] text-slate-300">Services</p>
+                        <div class="mt-4 grid gap-3 text-sm font-semibold">
+                            <a class="text-slate-200 hover:text-white transition-colors" href="#service-catalog">Electrical Design</a>
+                            <a class="text-slate-200 hover:text-white transition-colors" href="#service-catalog">LV Systems</a>
+                            <a class="text-slate-200 hover:text-white transition-colors" href="#field-services">Field Services</a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <p class="text-xs font-extrabold uppercase tracking-[0.2em] text-slate-300">Reach Us</p>
+                        <div class="mt-4 grid gap-3 text-sm font-semibold">
+                            <a class="text-slate-200 hover:text-white transition-colors inline-flex items-center gap-3" href="tel:+258864859969">
+                                <i data-lucide="phone" class="w-4 h-4 text-electric-300"></i>
+                                <span>+258 864 859 969</span>
+                            </a>
+                            <a class="text-slate-200 hover:text-white transition-colors inline-flex items-center gap-3" href="policy.html#hse-policy">
+                                <i data-lucide="shield-check" class="w-4 h-4 text-electric-300"></i>
+                                <span>HSE Policy</span>
+                            </a>
+                            <a class="text-slate-200 hover:text-white transition-colors inline-flex items-center gap-3" href="https://www.linkedin.com/company/lyzon-engineering-and-services-lda/" target="_blank" rel="noopener noreferrer">
+                                <span class="w-4 h-4 flex-shrink-0 inline-flex items-center justify-center overflow-hidden rounded-sm bg-white">
+                                    <img src="pictures/Screenshot 2026-09-30 171041.png" alt="LinkedIn logo" class="w-full h-full object-contain">
+                                </span>
+                                <span>LinkedIn · LYZON Engineering &amp; Services, Lda</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-10 flex justify-end">
+                    <a href="policy.html#hse-policy" class="iso-floating-badge" aria-label="View ISO 45001 certification and policy">
+                        <img src="pictures/iso-45001-certification.png" alt="Certified ISO 45001 with Bureau Veritas and UKAS management systems marks">
+                    </a>
+                </div>
+
+                <div class="mt-8 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-300 font-semibold">
+                    <p>&copy; 2026 LYZON Engineering & Services, Lda. All rights reserved.</p>
+                    <div class="flex items-center gap-6">
+                        <a href="policy.html#hse-policy" class="hover:text-white transition-colors">HSE Policy</a>
+                        <a href="index.html#contact" class="hover:text-white transition-colors">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <button id="backToTopButton" class="back-to-top" type="button" aria-label="Back to top" aria-hidden="true" tabindex="-1">
+        <i data-lucide="arrow-up"></i>
+    </button>
+
+    <script src="js/script.js?v=20260521_3"></script>
+</body>
+</html>

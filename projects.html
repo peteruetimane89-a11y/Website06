@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | LYZON Engineering & Services, Lda</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        window.tailwind = window.tailwind || {};
+        window.tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            200: '#bbf7d0',
+                            300: '#86efac',
+                            400: '#4ade80',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            800: '#166534',
+                            900: '#14532d',
+                            950: '#052e16'
+                        },
+                        electric: {
+                            50: '#ecfdf5',
+                            100: '#d1fae5',
+                            200: '#a7f3d0',
+                            300: '#6ee7b7',
+                            400: '#34d399',
+                            500: '#10b981'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        soft: '0 12px 24px -16px rgba(2, 6, 23, 0.25)',
+                        lift: '0 18px 40px -20px rgba(2, 6, 23, 0.35)'
+                    }
+                },
+            },
+        }
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .hero-grid {
+            background-image: radial-gradient(rgba(255, 255, 255, 0.14) 1px, transparent 0);
+            background-size: 26px 26px;
+        }
+        .underline-sweep::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, #22c55e 0%, rgba(34, 197, 94, 0) 100%);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.35s ease;
+        }
+        .underline-sweep:hover::after {
+            transform: scaleX(1);
+        }
+        .card-outline {
+            border: 1px solid rgba(15, 23, 42, 0.08);
+        }
+        .project-media::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(5, 46, 22, 0.72), rgba(5, 46, 22, 0.08), transparent);
+            pointer-events: none;
+        }
+    </style>
+    <link rel="stylesheet" href="Css/style.css?v=20260930_4">
+</head>
+<body class="text-slate-900 antialiased font-sans is-loading">
+    <div id="pageLoader" aria-label="Loading">
+        <div class="loader-panel">
+            <div class="loader-brand">
+                <img src="pictures/lyzon-logo-transparent.png" alt="Lyzon Engineering Logo" class="logo-img loader-logo">
+            </div>
+            <div class="loader-meter">
+                <div class="loader-progress">
+                    <div class="loader-progress-bar"></div>
+                </div>
+                <div class="loader-meta">
+                    <span class="loader-status">Loading</span>
+                    <span class="loader-dots"><span></span><span></span><span></span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="appShell">
+    <nav id="siteNav" class="sticky top-0 z-50 bg-white border-b border-slate-100 transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="h-20 flex items-center justify-between">
+                <a href="index.html#home" class="flex items-center" aria-label="LYZON home">
+                    <span class="logo-shell">
+                        <img src="pictures/lyzon-logo-transparent.png" alt="Lyzon Engineering Logo" class="logo-img h-11 md:h-12 w-auto object-contain">
+                    </span>
+                </a>
+
+                <div class="hidden lg:flex items-center gap-9 text-sm font-semibold">
+                    <a href="index.html#home" class="relative underline-sweep text-slate-600 hover:text-navy-950 transition-colors">Home</a>
+                    <a href="services.html" class="relative underline-sweep text-slate-600 hover:text-navy-950 transition-colors">Services</a>
+                    <a href="industries.html" class="relative underline-sweep text-slate-600 hover:text-navy-950 transition-colors">Industries</a>
+                    <a href="projects.html" class="relative underline-sweep text-navy-950">Projects</a>
+                    <a href="policy.html" class="relative underline-sweep text-slate-600 hover:text-navy-950 transition-colors">Policy</a>
+                    <a href="events.html" class="relative underline-sweep text-slate-600 hover:text-navy-950 transition-colors">Events</a>
+                </div>
+
+                <div class="hidden lg:flex items-center gap-3">
+                    <a href="index.html#contact" class="px-5 py-3 rounded font-extrabold text-navy-950 bg-electric-400 hover:bg-electric-300 transition-colors shadow-soft">Request Quote</a>
+                </div>
+
+                <button id="mobileMenuButton" class="lg:hidden inline-flex items-center justify-center w-11 h-11 rounded border border-slate-200 hover:bg-slate-50 transition-colors" aria-label="Open menu">
+                    <i data-lucide="menu" class="w-6 h-6 text-navy-950"></i>
+                </button>
+            </div>
+
+            <div id="mobileMenu" class="hidden lg:hidden pb-5">
+                <div class="grid gap-2 pt-2">
+                    <a href="index.html#home" class="px-3 py-2 rounded text-sm font-semibold text-slate-700 hover:bg-slate-50">Home</a>
+                    <a href="services.html" class="px-3 py-2 rounded text-sm font-semibold text-slate-700 hover:bg-slate-50">Services</a>
+                    <a href="industries.html" class="px-3 py-2 rounded text-sm font-semibold text-slate-700 hover:bg-slate-50">Industries</a>
+                    <a href="projects.html" class="px-3 py-2 rounded text-sm font-semibold text-navy-950 hover:bg-slate-50">Projects</a>
+                    <a href="policy.html" class="px-3 py-2 rounded text-sm font-semibold text-slate-700 hover:bg-slate-50">Policy</a>
+                    <a href="events.html" class="px-3 py-2 rounded text-sm font-semibold text-slate-700 hover:bg-slate-50">Events</a>
+                    <a href="index.html#contact" class="mt-2 px-4 py-3 rounded font-extrabold text-navy-950 bg-electric-400 hover:bg-electric-300 transition-colors text-center">Request Quote</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="bg-navy-950 text-white">
+            <div class="hero-grid hero-grid--projects">
+                <div class="w-full pl-2 pr-4 sm:pl-4 sm:pr-6 lg:pl-6 lg:pr-8 py-12 lg:py-16 hero-layout">
+                    <div class="hero-content-panel reveal-up">
+                        <p class="hero-kicker inline-flex items-center gap-2 text-electric-300 font-extrabold uppercase tracking-[0.2em] text-xs">
+                            <i data-lucide="clipboard-check" class="w-4 h-4"></i>
+                            Project Portfolio
+                        </p>
+                        <h1 class="hero-heading mt-4 text-4xl md:text-6xl font-extrabold tracking-tight leading-[0.95]">
+                            <span class="block hero-heading-brand">Projects</span>
+                            <span class="block hero-heading-main">Delivered Across</span>
+                            <span class="block hero-heading-sub">Mozambique</span>
+                        </h1>
+                        <p class="hero-summary mt-5 text-lg md:text-xl text-slate-200 max-w-2xl leading-relaxed">
+                            Selected work across LV, MV, panels, control, commissioning, and maintenance, presented as examples of our field capability and delivery standards.
+                        </p>
+                        <div class="hero-divider mt-6" aria-hidden="true"></div>
+                        <div class="hero-actions mt-7 flex flex-wrap gap-4">
+                            <a href="index.html#contact" class="hero-action-primary inline-flex items-center justify-center min-w-[200px] px-7 py-4 rounded-full font-extrabold text-navy-950 bg-electric-400 hover:bg-electric-300 transition-colors shadow-lift">Request a Quote</a>
+                            <a href="index.html#home" class="hero-action-secondary inline-flex items-center justify-center min-w-[200px] px-7 py-4 rounded-full font-extrabold border border-white/25 hover:border-electric-300 hover:text-electric-200 transition-colors">Back to Home</a>
+                        </div>
+                        <div class="mt-8 hero-trust-card reveal-right">
+                            <p class="hero-trust-title text-xs font-bold uppercase tracking-[0.22em] text-electric-200">Project Delivery</p>
+                            <p class="hero-trust-copy mt-3 text-white font-semibold leading-relaxed">Site work, installation, testing, and maintenance presented in a cleaner portfolio view that shows our practical field capability.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 lg:py-20 bg-slate-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">
+                    <div class="max-w-3xl">
+                        <p class="text-xs font-extrabold uppercase tracking-[0.2em] text-electric-500">Case Studies</p>
+                        <h2 class="mt-3 text-3xl md:text-4xl font-extrabold tracking-tight text-navy-950">Selected Projects</h2>
+                        <p class="mt-4 text-slate-600 text-lg leading-relaxed">A selection of field work, installations, and maintenance support that reflects our practical delivery across electrical and industrial environments.</p>
+                    </div>
+                </div>
+
+                <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <article class="group rounded-2xl overflow-hidden shadow-soft card-outline hover:shadow-lift transition-shadow reveal-up">
+                        <div class="relative aspect-[4/3] bg-slate-100 overflow-hidden project-media">
+                            <img src="pictures/WhatsApp Image 2026-02-01 at 12.12.29.jpeg" alt="LV Panel Installation – Marracuene" class="w-full h-full object-contain transition-transform duration-700 ease-out group-hover:scale-105">
+                            <div class="absolute top-4 left-4 inline-flex items-center gap-2 rounded-full bg-white/90 backdrop-blur px-3 py-1 text-xs font-extrabold tracking-widest text-navy-950 border border-white/50">
+                                <span class="w-2 h-2 rounded-full bg-electric-400"></span>
+                                LV
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-xs font-extrabold uppercase tracking-[0.2em] text-electric-500">LV</p>
+                            <h3 class="mt-2 font-extrabold text-navy-950">LV Control Panel Installation</h3>
+                            <p class="mt-3 text-sm text-slate-600">On-site wiring and commissioning work for an LV control panel installation, supporting safe energization and operational readiness.</p>
+                            <div class="mt-5 grid grid-cols-2 gap-4 text-xs font-semibold text-slate-500">
+                                <div class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-electric-500"></i>Marracuene</div>
+                                <div class="flex items-center gap-2"><i data-lucide="calendar" class="w-4 h-4 text-electric-500"></i>23/05/2025</div>
+                                <div class="flex items-center gap-2"><i data-lucide="hash" class="w-4 h-4 text-electric-500"></i>SiteID 1882 (Guava)</div>
+                                <div class="flex items-center gap-2"><i data-lucide="map" class="w-4 h-4 text-electric-500"></i>25.825363°S, 32.635388°E</div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="group rounded-2xl overflow-hidden shadow-soft card-outline hover:shadow-lift transition-shadow reveal-up">
+                        <div class="relative aspect-[4/3] bg-slate-100 overflow-hidden project-media">
+                            <img src="pictures/WhatsApp Image 2026-02-01 at 12.12.32.jpeg" alt="Overhead Line Field Work – Matola" class="w-full h-full object-contain transition-transform duration-700 ease-out group-hover:scale-105">
+                            <div class="absolute top-4 left-4 inline-flex items-center gap-2 rounded-full bg-white/90 backdrop-blur px-3 py-1 text-xs font-extrabold tracking-widest text-navy-950 border border-white/50">
+                                <span class="w-2 h-2 rounded-full bg-electric-400"></span>
+                                FIELD
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-xs font-extrabold uppercase tracking-[0.2em] text-electric-500">FIELD WORK</p>
+                            <h3 class="mt-2 font-extrabold text-navy-950">Overhead Line Maintenance</h3>
+                            <p class="mt-3 text-sm text-slate-600">Field maintenance work on a pole-mounted electrical line, supporting safe restoration, inspection, and reliable power delivery.</p>
+                            <div class="mt-5 grid grid-cols-2 gap-4 text-xs font-semibold text-slate-500">
+                                <div class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-electric-500"></i>Matola, Maputo</div>
+                                <div class="flex items-center gap-2"><i data-lucide="calendar" class="w-4 h-4 text-electric-500"></i>23/05/2025</div>
+                                <div class="flex items-center gap-2"><i data-lucide="hash" class="w-4 h-4 text-electric-500"></i>SiteID 1543 (Cumbeza)</div>
+                                <div class="flex items-center gap-2"><i data-lucide="map" class="w-4 h-4 text-electric-500"></i>25.778767°S, 32.587768°E</div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="group rounded-2xl overflow-hidden shadow-soft card-outline hover:shadow-lift transition-shadow reveal-up">
+                        <div class="relative aspect-[4/3] bg-slate-100 overflow-hidden project-media">
+                            <img src="pictures/WhatsApp Image 2026-02-01 at 12.12.34.jpeg" alt="Earthing Installation – Site 2307 Denguene" class="w-full h-full object-contain transition-transform duration-700 ease-out group-hover:scale-105">
+                            <div class="absolute top-4 left-4 inline-flex items-center gap-2 rounded-full bg-white/90 backdrop-blur px-3 py-1 text-xs font-extrabold tracking-widest text-navy-950 border border-white/50">
+                                <span class="w-2 h-2 rounded-full bg-electric-400"></span>
+                                EARTH
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-xs font-extrabold uppercase tracking-[0.2em] text-electric-500">EARTHING</p>
+                            <h3 class="mt-2 font-extrabold text-navy-950">Earthing System Installation</h3>
+                            <p class="mt-3 text-sm text-slate-600">On-site earthing work, including drilling and grounding conductor placement to support electrical safety and reliable site operation.</p>
+                            <div class="mt-5 grid grid-cols-2 gap-4 text-xs font-semibold text-slate-500">
+                                <div class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-electric-500"></i>Chidenguele, Mandlakaze</div>
+                                <div class="flex items-center gap-2"><i data-lucide="calendar" class="w-4 h-4 text-electric-500"></i>27/11/2025</div>
+                                <div class="flex items-center gap-2"><i data-lucide="hash" class="w-4 h-4 text-electric-500"></i>Site 2307 (Denguene)</div>
+                                <div class="flex items-center gap-2"><i data-lucide="map" class="w-4 h-4 text-electric-500"></i>-24.853800, 34.400272</div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="group rounded-2xl overflow-hidden shadow-soft card-outline hover:shadow-lift transition-shadow reveal-up">
+                        <div class="relative aspect-[4/3] bg-slate-100 overflow-hidden project-media">
+                            <img src="pictures/WhatsApp Image 2026-09-01 at 17.55.38 (1).jpeg" alt="VSD Panel Preparation – Project SM02" class="w-full h-full object-contain transition-transform duration-700 ease-out group-hover:scale-105">
+                            <div class="absolute top-4 left-4 inline-flex items-center gap-2 rounded-full bg-white/90 backdrop-blur px-3 py-1 text-xs font-extrabold tracking-widest text-navy-950 border border-white/50">
+                                <span class="w-2 h-2 rounded-full bg-electric-400"></span>
+                                VSD
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-xs font-extrabold uppercase tracking-[0.2em] text-electric-500">Project SM02</p>
+                            <h3 class="mt-2 font-extrabold text-navy-950">VSD Panel Preparation</h3>
+                            <p class="mt-3 text-sm text-slate-600">Preparation and inspection of VSD panels before they are transported and installed inside the designated container, supporting the next stage of the project.</p>
+                            <div class="mt-5 grid grid-cols-2 gap-4 text-xs font-semibold text-slate-500">
+                                <div class="flex items-center gap-2"><i data-lucide="hash" class="w-4 h-4 text-electric-500"></i>Project SM02</div>
+                                <div class="flex items-center gap-2"><i data-lucide="box" class="w-4 h-4 text-electric-500"></i>VSD Panels</div>
+                                <div class="flex items-center gap-2"><i data-lucide="clipboard-check" class="w-4 h-4 text-electric-500"></i>Pre-Transport</div>
+                                <div class="flex items-center gap-2"><i data-lucide="settings" class="w-4 h-4 text-electric-500"></i>Inspection Ready</div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="group rounded-2xl overflow-hidden shadow-soft card-outline hover:shadow-lift transition-shadow reveal-up">
+                        <div class="relative aspect-[4/3] bg-slate-100 overflow-hidden project-media">
+                            <img src="pictures/WhatsApp Image 2026-09-05 at 14.45.48.jpeg" alt="Skid Refurbishment &amp; 1300 kVA Transformer Installation" class="w-full h-full object-contain transition-transform duration-700 ease-out group-hover:scale-105">
+                            <div class="absolute top-4 left-4 inline-flex items-center gap-2 rounded-full bg-white/90 backdrop-blur px-3 py-1 text-xs font-extrabold tracking-widest text-navy-950 border border-white/50">
+                                <span class="w-2 h-2 rounded-full bg-electric-400"></span>
+                                MV
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-xs font-extrabold uppercase tracking-[0.2em] text-electric-500">INFRASTRUCTURE</p>
+                            <h3 class="mt-2 font-extrabold text-navy-950">Skid Refurbishment &amp; 1300 kVA Transformer Installation</h3>
+                            <p class="mt-3 text-sm text-slate-600">On-site refurbishment of skids alongside the installation of a 1300 kVA transformer, carried out by the LYZON team to support the project's electrical infrastructure and operational requirements.</p>
+                            <div class="mt-5 grid grid-cols-2 gap-4 text-xs font-semibold text-slate-500">
+                                <div class="flex items-center gap-2"><i data-lucide="box" class="w-4 h-4 text-electric-500"></i>Skid Refurbishment</div>
+                                <div class="flex items-center gap-2"><i data-lucide="zap" class="w-4 h-4 text-electric-500"></i>1300 kVA Transformer</div>
+                                <div class="flex items-center gap-2"><i data-lucide="wrench" class="w-4 h-4 text-electric-500"></i>On-site Installation</div>
+                                <div class="flex items-center gap-2"><i data-lucide="users" class="w-4 h-4 text-electric-500"></i>LYZON Team</div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="group rounded-2xl overflow-hidden shadow-soft card-outline hover:shadow-lift transition-shadow reveal-up">
+                        <div class="relative aspect-[4/3] bg-slate-100 overflow-hidden project-media">
+                            <img src="pictures/WhatsApp Image 2026-09-30 at 17.50.17.jpeg" alt="PROJECT WCPA | KENMARE MINE – Electrical Conduit Replacement" class="w-full h-full object-contain transition-transform duration-700 ease-out group-hover:scale-105">
+                            <div class="absolute top-4 left-4 inline-flex items-center gap-2 rounded-full bg-white/90 backdrop-blur px-3 py-1 text-xs font-extrabold tracking-widest text-navy-950 border border-white/50">
+                                <span class="w-2 h-2 rounded-full bg-electric-400"></span>
+                                WCPA
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-xs font-extrabold uppercase tracking-[0.2em] text-electric-500">PROJECT WCPA | KENMARE MINE</p>
+                            <h3 class="mt-2 font-extrabold text-navy-950">Electrical Conduit Replacement</h3>
+                            <p class="mt-3 text-sm text-slate-600">Replacement of a corroded electrical conduit as part of ongoing maintenance and inspection activities, with LYZON's Executive Director on-site alongside the operational team.</p>
+                            <div class="mt-5 grid grid-cols-2 gap-4 text-xs font-semibold text-slate-500">
+                                <div class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-electric-500"></i>WCPA, Kenmare Mine</div>
+                                <div class="flex items-center gap-2"><i data-lucide="wrench" class="w-4 h-4 text-electric-500"></i>Electrical Maintenance</div>
+                                <div class="flex items-center gap-2"><i data-lucide="users" class="w-4 h-4 text-electric-500"></i>LYZON Team</div>
+                                <div class="flex items-center gap-2"><i data-lucide="shield-check" class="w-4 h-4 text-electric-500"></i>On-Site Leadership</div>
+                                <div class="flex items-center gap-2 col-span-2"><i data-lucide="clipboard-check" class="w-4 h-4 text-electric-500"></i>Maintenance &amp; Inspection</div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="mt-12 bg-white rounded-2xl shadow-soft card-outline p-8 md:p-10 reveal-up">
+                    <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">
+                        <div class="max-w-3xl">
+                            <p class="text-xs font-extrabold uppercase tracking-[0.2em] text-electric-500">Project Portfolio</p>
+                            <h3 class="mt-3 text-2xl md:text-3xl font-extrabold tracking-tight text-navy-950">Project Work Highlights</h3>
+                            <p class="mt-3 text-slate-600 text-base md:text-lg leading-relaxed">Representative client work and maintenance contracts that show the scale, range, and delivery profile of our field experience.</p>
+                        </div>
+                        <a href="index.html#contact" class="text-sm font-extrabold text-navy-950 hover:text-navy-700 transition-colors inline-flex items-center gap-2">
+                            Discuss Your Project
+                            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                    <div class="mt-8 industry-showcase-list">
+                        <article class="industry-showcase-row">
+                            <div class="industry-showcase-media">
+                                <img src="pictures/Screenshot 2026-07-11 232114.png" alt="Banco de Mocambique logo">
+                                <p class="mt-3 text-[11px] font-semibold text-slate-500">Banco de Mocambique</p>
+                            </div>
+                            <div class="industry-showcase-copy">
+                                <p class="text-[11px] font-extrabold uppercase tracking-[0.2em] text-electric-200">Banco de Mocambique</p>
+                                <h4 class="mt-2 text-base md:text-lg font-extrabold text-white">Rehabilitation of protocolar houses and buildings</h4>
+                                <p class="mt-2 text-sm md:text-base leading-relaxed">MV cable terminations 33kV; transformer installation and commissioning.</p>
+                            </div>
+                        </article>
+                        <article class="industry-showcase-row">
+                            <div class="industry-showcase-media">
+                                <img src="pictures/Screenshot 2026-07-11 232132.png" alt="JW.org logo">
+                                <p class="mt-1 text-[11px] font-semibold text-slate-500">JW.org</p>
+                            </div>
+                            <div class="industry-showcase-copy">
+                                <p class="text-[11px] font-extrabold uppercase tracking-[0.2em] text-electric-200">JW.org</p>
+                                <h4 class="mt-2 text-base md:text-lg font-extrabold text-white">Electrical services installation and supply of material</h4>
+                                <p class="mt-2 text-sm md:text-base leading-relaxed">Fiber and devices relocation services, wireless configurations software and hardware at AH Matola.</p>
+                            </div>
+                        </article>
+                        <article class="industry-showcase-row">
+                            <div class="industry-showcase-media">
+                                <img src="pictures/Screenshot 2026-07-11 232152.png" alt="Vodacom logo">
+                                <p class="mt-1 text-[11px] font-semibold text-slate-500">Vodacom</p>
+                            </div>
+                            <div class="industry-showcase-copy">
+                                <p class="text-[11px] font-extrabold uppercase tracking-[0.2em] text-electric-200">Vodacom</p>
+                                <h4 class="mt-2 text-base md:text-lg font-extrabold text-white">Ongoing service contract to MV and LV power to sites</h4>
+                                <p class="mt-2 text-sm md:text-base leading-relaxed">Preventive and corrective maintenance in Mozambique's South Region.</p>
+                            </div>
+                        </article>
+                        <article class="industry-showcase-row">
+                            <div class="industry-showcase-media">
+                                <img src="pictures/Screenshot 2026-07-11 232207.png" alt="Sasol logo">
+                                <p class="mt-1 text-[11px] font-semibold text-slate-500">Sasol</p>
+                            </div>
+                            <div class="industry-showcase-copy">
+                                <p class="text-[11px] font-extrabold uppercase tracking-[0.2em] text-electric-200">Sasol</p>
+                                <h4 class="mt-2 text-base md:text-lg font-extrabold text-white">Ongoing HVAC system corrective and preventive</h4>
+                                <p class="mt-2 text-sm md:text-base leading-relaxed">Maintenance (Temane CPF, PSA and Matola Depot). HVAC systems upgrade project.</p>
+                            </div>
+                        </article>
+                        <article class="industry-showcase-row">
+                            <div class="industry-showcase-media">
+                                <img src="pictures/Screenshot 2026-07-11 232225.png" alt="Kenmare logo">
+                                <p class="mt-1 text-[11px] font-semibold text-slate-500">Kenmare</p>
+                            </div>
+                            <div class="industry-showcase-copy">
+                                <p class="text-[11px] font-extrabold uppercase tracking-[0.2em] text-electric-200">Kenmare</p>
+                                <h4 class="mt-2 text-base md:text-lg font-extrabold text-white">Electrical SKID complete installation</h4>
+                                <p class="mt-2 text-sm md:text-base leading-relaxed">Electrical cables terminations 11kV & 22kV; upgrade on MSP 1.2 MT project, electrical, mechanical & instrumentation (VSD & electrical motors); installation WCPA instrumentation upgrade concentrator plant; ongoing maintenance.</p>
+                            </div>
+                        </article>
+                        <article class="industry-showcase-row">
+                            <div class="industry-showcase-media">
+                                <img src="pictures/Screenshot 2026-07-11 232256.png" alt="TRAC logo">
+                                <p class="mt-1 text-[11px] font-semibold text-slate-500">TRAC</p>
+                            </div>
+                            <div class="industry-showcase-copy">
+                                <p class="text-[11px] font-extrabold uppercase tracking-[0.2em] text-electric-200">TRAC</p>
+                                <h4 class="mt-2 text-base md:text-lg font-extrabold text-white">Ongoing maintenance N4</h4>
+                                <p class="mt-2 text-sm md:text-base leading-relaxed">Electrical maintenance of toll gate, public lighting and traffic lights on EN4; installation and electrical maintenance of power transformers and MV power line.</p>
+                            </div>
+                        </article>
+                        <article class="industry-showcase-row">
+                            <div class="industry-showcase-media">
+                                <img src="pictures/Screenshot 2026-07-11 232315.png" alt="Scatec Solar logo">
+                                <p class="mt-1 text-[11px] font-semibold text-slate-500">Scatec Solar</p>
+                            </div>
+                            <div class="industry-showcase-copy">
+                                <p class="text-[11px] font-extrabold uppercase tracking-[0.2em] text-electric-200">Scatec Solar</p>
+                                <h4 class="mt-2 text-base md:text-lg font-extrabold text-white">High / medium voltage current maintenance works</h4>
+                                <p class="mt-2 text-sm md:text-base leading-relaxed">In Mocuba solar plant; fault find and resistance test in HV and 33kV MV cable; electrical cable joints 33kV; electrical cable terminations 33kV.</p>
+                            </div>
+                        </article>
+                        <article class="industry-showcase-row">
+                            <div class="industry-showcase-media">
+                                <img src="pictures/Screenshot 2026-07-11 232326.png" alt="PVH logo">
+                                <p class="mt-1 text-[11px] font-semibold text-slate-500">PVH</p>
+                            </div>
+                            <div class="industry-showcase-copy">
+                                <p class="text-[11px] font-extrabold uppercase tracking-[0.2em] text-electric-200">PVH</p>
+                                <h4 class="mt-2 text-base md:text-lg font-extrabold text-white">General mechanical maintenance</h4>
+                                <p class="mt-2 text-sm md:text-base leading-relaxed">Electrical motor repair & gear box on; Mocuba (Quelimane) solar plant.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="mt-12 rounded-2xl border border-emerald-200 bg-emerald-50/70 p-8 md:p-10 reveal-up">
+                    <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+                        <div class="max-w-3xl">
+                            <p class="text-xs font-extrabold uppercase tracking-[0.2em] text-electric-500">Service Delivery</p>
+                            <h3 class="mt-3 text-2xl md:text-3xl font-extrabold tracking-tight text-navy-950">Need the detailed field-service view?</h3>
+                            <p class="mt-3 text-slate-600 text-base md:text-lg leading-relaxed">The full Team on the Field breakdown, service execution photos, and maintenance scope are now organized on the dedicated Services page.</p>
+                        </div>
+                        <a href="services.html#field-services" class="inline-flex items-center justify-center px-7 py-4 rounded-xl font-extrabold text-navy-950 bg-electric-400 hover:bg-electric-300 transition-colors shadow-soft">
+                            View Services
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mt-12 rounded-2xl bg-slate-50 border border-slate-200 p-8 md:p-10">
+                    <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+                        <div class="max-w-2xl">
+                            <h3 class="text-2xl font-extrabold text-navy-950">Need support on a similar project?</h3>
+                            <p class="mt-3 text-slate-600">Tell us about your site, timeline, and technical requirements and we will prepare a practical plan for supply, installation, testing, or maintenance support.</p>
+                        </div>
+                        <a href="index.html#contact" class="px-7 py-4 rounded font-extrabold text-navy-950 bg-electric-400 hover:bg-electric-300 transition-colors shadow-soft">Send Project Details</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-navy-950 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+            <div class="grid md:grid-cols-4 gap-10">
+                <div>
+                    <div class="flex items-center">
+                        <span class="logo-shell-footer">
+                            <img src="pictures/lyzon-logo-transparent.png" alt="Lyzon Engineering Logo" class="logo-img h-10 w-auto object-contain">
+                        </span>
+                    </div>
+                    <p class="mt-5 text-sm text-slate-200 leading-relaxed">
+                        LYZON Engineering & Services, Lda. Industrial electrical materials and engineering support since 2009.
+                    </p>
+                </div>
+
+                <div>
+                    <p class="text-xs font-extrabold uppercase tracking-[0.2em] text-slate-300">Company</p>
+                    <div class="mt-4 grid gap-3 text-sm font-semibold">
+                        <a class="text-slate-200 hover:text-white transition-colors" href="events.html">Events</a>
+                        <a class="text-slate-200 hover:text-white transition-colors" href="projects.html">Projects</a>
+                        <a class="text-slate-200 hover:text-white transition-colors" href="policy.html">Policy</a>
+                        <a class="text-slate-200 hover:text-white transition-colors" href="index.html#contact">Contact</a>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="text-xs font-extrabold uppercase tracking-[0.2em] text-slate-300">Services</p>
+                    <div class="mt-4 grid gap-3 text-sm font-semibold">
+                        <a class="text-slate-200 hover:text-white transition-colors" href="services.html#service-catalog">Electrical Design</a>
+                        <a class="text-slate-200 hover:text-white transition-colors" href="services.html#service-catalog">LV Systems</a>
+                        <a class="text-slate-200 hover:text-white transition-colors" href="services.html#service-catalog">MV Infrastructure</a>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="text-xs font-extrabold uppercase tracking-[0.2em] text-slate-300">Reach Us</p>
+                    <div class="mt-4 grid gap-3 text-sm font-semibold">
+                        <a class="text-slate-200 hover:text-white transition-colors inline-flex items-center gap-3" href="tel:+258864859969">
+                            <i data-lucide="phone" class="w-4 h-4 text-electric-300"></i>
+                            <span>+258 864 859 969</span>
+                        </a>
+                        <a class="text-slate-200 hover:text-white transition-colors inline-flex items-center gap-3" href="policy.html#hse-policy">
+                            <i data-lucide="shield-check" class="w-4 h-4 text-electric-300"></i>
+                            <span>HSE Policy</span>
+                        </a>
+                        <a class="text-slate-200 hover:text-white transition-colors inline-flex items-center gap-3" href="https://www.linkedin.com/company/lyzon-engineering-and-services-lda/" target="_blank" rel="noopener noreferrer">
+                            <span class="w-4 h-4 flex-shrink-0 inline-flex items-center justify-center overflow-hidden rounded-sm bg-white">
+                                <img src="pictures/Screenshot 2026-09-30 171041.png" alt="LinkedIn logo" class="w-full h-full object-contain">
+                            </span>
+                            <span>LinkedIn · LYZON Engineering &amp; Services, Lda</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-10 flex justify-end">
+                <a href="policy.html#hse-policy" class="iso-floating-badge" aria-label="View ISO 45001 certification and policy">
+                    <img src="pictures/iso-45001-certification.png" alt="Certified ISO 45001 with Bureau Veritas and UKAS management systems marks">
+                </a>
+            </div>
+
+            <div class="mt-8 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-300 font-semibold">
+                <p>&copy; 2026 LYZON Engineering & Services, Lda. All rights reserved.</p>
+                <div class="flex items-center gap-6">
+                    <a href="policy.html#hse-policy" class="hover:text-white transition-colors">HSE Policy</a>
+                    <a href="index.html#contact" class="hover:text-white transition-colors">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <button id="backToTopButton" class="back-to-top" type="button" aria-label="Back to top" aria-hidden="true" tabindex="-1">
+        <i data-lucide="arrow-up"></i>
+    </button>
+
+    <script src="js/script.js?v=20260521_3"></script>
+</body>
+</html>
